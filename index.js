@@ -53,7 +53,7 @@ document.getElementById("currentdate").textContent = fulldate;
 
 try{
   let options = {
-    weekday: ("short"),
+    weekday: ("long"),
     day: ("numeric"),
     month: ("long"),
     year: ("numeric")
