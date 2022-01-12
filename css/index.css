@@ -6,12 +6,13 @@ article {
 }
 
 body {
-    font-family: 'Kalam', cursive;
+    font-family: 'Anton', sans-serif;
 }
 
 div {
     margin: 10px;
     text-align: center;
+    font-family: 'Anton', sans-serif;
 }
 
 footer {
@@ -19,6 +20,7 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
+    
 }
 
 header {
@@ -111,5 +113,5 @@ section {
 
     body {margin: .5rem;}
     span{font-weight: 700;}
-    #currentdate {(color: rgba(50,50,250,1);}
+    #currentdate {color: rgba(50,50,250,1);}
 }
