@@ -1,7 +1,11 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Document
-   ========================================================================== */
+* {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Cinzel', serif;
+    font-family: 'Courier Prime', monospace;
+}
+/*========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -347,3 +351,4 @@
   [hidden] {
     display: none;
   }
+ 
