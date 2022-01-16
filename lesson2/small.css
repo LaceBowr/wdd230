@@ -1,0 +1,12 @@
+main{}
+h2{}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section{}
+main picture{}
+.colimage{}

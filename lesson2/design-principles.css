@@ -1,0 +1,39 @@
+body{}
+/* phone or baseline views ***************************/
+main{}
+h2{}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+main section{}
+main picture{}
+.colimage{}
+
+/* Tablet Views *************************/
+@media only screen and (min-width: 37.5em) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.two{
+        grid-column: span 2;
+    }
+
+    main Picture {}
+    main section picture img {}
+}
+
+/* Desktop Views *************************/
+@media only screen and (min-width: 60em){
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section:nth-child(3){}
+}
