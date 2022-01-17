@@ -5,7 +5,16 @@
 const myImage = "index_images.jpg";
 let myName = "Laycie J. Bowers";
 let Title = "Title";
-let myLessons = [ "Lesson 02: ", "Lesson 03: ", "Lesson 04:", "Lesson 05:", "Lesson 06:", "Lesson 07:", "Lesson 09:", "Lesson 10:", "Lesson 11:"];
+let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"], 
+["Lesson 03: ","https://www.google.com/"], 
+["Lesson 04:","https://www.google.com/"],
+[ "Lesson 05:","https://www.google.com/"], 
+["Lesson 06:","https://www.google.com/"],
+["Lesson 07:","https://www.google.com/"],
+["Lesson 08:","https://www.google.com/"],
+["Lesson 09:","https://www.google.com/"], 
+["Lesson 10:","https://www.google.com/"], 
+["Lesson 11:","https://www.google.com/"]];
 
 document.getElementById("year");
 document.getElementById("myImage").setAttribute("src", myImage);
@@ -14,8 +23,8 @@ myLessons.forEach((item)=>{
     let li = document.createElement("li");
     let a = document.createElement("a");
     a.textContent = "title";
-    a.setAttribute("href","https://google.com/");
-    li.innerHTML = item;
+    a.setAttribute("href",item[1]);
+    li.innerHTML = item[0];
     li.appendChild(a);
     myLessons_html_ref_list.appendChild(li);
 });
