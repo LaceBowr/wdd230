@@ -1,12 +1,53 @@
-main{}
-h2{}
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather&family=Vollkorn:wght@400;700&display=swap');
 main{
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 0.8rem;
+    margin:0.5rem;
+    margin-right: 100px;
+    
+    
 }
 
+header{
+    
+    font-family: Vollkorn;
+    background-color: steelblue;
+    text-align: center;
+    grid-column: span 3;
+}
+body{
+    color:seashell;
+    font-size: span 1;
+    text-align: center;
+    font-family: Vollkorn;
+    
+}
+
+section.one{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border:20px solid rgb(255, 255, 255);
+    background-color: rgb(114, 104, 104);
+}
+section.two{
+    margin-top:0px;
+    margin-bottom: 0px;
+    border:20px solid rgb(255, 255, 255);
+    background-color: rgb(114, 104, 104);
+}
+section.three{
+    margin-top:0px;
+    margin-bottom: 0px;    
+    border:20px solid rgb(255, 255, 255);
+    background-color: rgb(114, 104, 104);
+}
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 20px;
+    text-align: center; 
+    font-family: Merriweather; 
+}
 main section{}
 main picture{}
 .colimage{}
