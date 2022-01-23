@@ -6,7 +6,7 @@ const myImage = "index_images.jpg";
 let myName = "Laycie J. Bowers";
 let Title = "Title";
 let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"], 
-["Lesson 03: ","https://www.google.com/"], 
+["Lesson 03: ","lesson3/index.html"], 
 ["Lesson 04:","https://www.google.com/"],
 [ "Lesson 05:","https://www.google.com/"], 
 ["Lesson 06:","https://www.google.com/"],
