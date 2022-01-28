@@ -1,0 +1,94 @@
+head {
+    height: 50%;
+}
+
+nav ul {
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: "Cinzel", serif;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    font-family: DM Serif Display (Regular 400);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: grid;
+
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.logo {
+    font-style: italic;
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+.social {
+    margin-right: 1.7rem;
+    flex-direction: column;
+}
+
+.social svg {
+    width: 25px;
+    height: auto;
+    justify-content: right;
+    flex-direction: column;
+}
+
+aside {
+    margin: 0.5rem;
+    border: 1px solid black;
+    padding: 0.75rem;
+    background-color: #D7966f;
+}
+
+.elsinore_1874 {
+    padding: 1rem;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.elsinore_1896 {
+    padding: 1.5em;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.elsinore_2021 {
+    padding: 1rem;
+    width: 100%;
+    margin-left: 2%;
+}
