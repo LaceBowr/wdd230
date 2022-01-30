@@ -1,51 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display&family=IBM+Plex+Serif:ital@1&display=swap');
 @media only screen and (min-width: 37.5em) {
-    head {
-        height: 100%;
-        margin-top: 45px;
-    }
+h1{
+    font-size: 2.5rem;
+}    
+nav a{
+    font-size: 2.5rem;
+}
+nav a:hover {
+    background-color: white;
+    color: rgb(68, 65, 65);
 
-    body {
-        height: 100vh;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex: 1 1 auto;
+}
+nav a{
+    font-size: 1rem;
+}
 
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 2em;
-        background-color: #ffffff;
-        padding: 0;
-        margin: 0;
-    }
+nav a:hover{
+    --d: 75%;
+}
+main{
+    grid-template-columns: 1fr 1fr;
+}
+article.nth-child{
+    margin: 10px
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article.spotlights{
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+}
 
-    header img {
-        font-family: serif;
-        width: 100%;
-    }
 
-    .headings h1 {
-        font-family: serif;
-        font-size: 3rem;
-    }
-
-    .logo {
-        max-width: 15%;
-        float: left;
-        padding: 1em;
-        letter-spacing: 1.5pt;
-        font-size: larger;
-        margin-left: 17px;
-        margin-right: 15px;
-        border-radius: 5px;
-    }
-
-    .elsinore_1874 {
-        margin-left: 2%;
-    }
-
-    .elsinore_1896 {
-        margin-left: 2%;
-    }
-
-    .elsinore_2021 {
-        margin-left: 2%;
-    }
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.image2Logo{
+    grid-column: 1fr/2fr;
+    grid-row: 1;
+    width: 50%;
+}
+h3{
+    font-family:IBM Plex Serif italic;
+    grid-column: 1fr/4fr;
+    grid-row:1;
+}
+.contactInfo{
+    grid-column: 4/5;
+}
+.lastModified{
+    margin-left:auto;
+    text-align: center;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 2;
+    border-top: 1px solid white;
 }
