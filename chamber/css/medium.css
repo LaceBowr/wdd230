@@ -1,66 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display&family=IBM+Plex+Serif:ital@1&display=swap');
+
 @media only screen and (min-width: 37.5em) {
-h1{
-    font-size: 2.5rem;
-}    
-nav a{
-    font-size: 2.5rem;
-}
-nav a:hover {
-    background-color: white;
-    color: rgb(68, 65, 65);
+    h1 {
+        font-size: 2.5rem;
+    }
 
-}
-nav ul {
-    display: flex;
-}
-nav ul li {
-    flex: 1 1 auto;
-}
-nav a{
-    font-size: 1rem;
-}
+    nav a {
+        font-size: 2.5rem;
+    }
 
-nav a:hover{
-    --d: 75%;
-}
-main{
-    grid-template-columns: 1fr 1fr;
-}
-article.nth-child{
-    margin: 10px
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-article.spotlights{
-    margin: 10px;
-    grid-template-columns: 1fr 1fr;
-}
+    nav a:hover {
+        background-color: white;
+        color: rgb(68, 65, 65);
+
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        --d: 75%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article.nth-child {
+        margin: 10px display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article.spotlights {
+        margin: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
 
 
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-.image2Logo{
-    grid-column: 1fr/2fr;
-    grid-row: 1;
-    width: 50%;
-}
-h3{
-    font-family:IBM Plex Serif italic;
-    grid-column: 1fr/4fr;
-    grid-row:1;
-}
-.contactInfo{
-    grid-column: 4/5;
-}
-.lastModified{
-    margin-left:auto;
-    text-align: center;
-    justify-content: center;
-    grid-column: 1/4;
-    grid-row: 2;
-    border-top: 1px solid white;
-}
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .image2Logo {
+        grid-column: 1fr/2fr;
+        grid-row: 1;
+        width: 50%;
+    }
+
+    h3 {
+        font-family: IBM Plex Serif italic;
+        grid-column: 1fr/4fr;
+        grid-row: 1;
+    }
+
+    .contactInfo {
+        grid-column: 4/5;
+    }
+
+    .lastModified {
+        margin-left: auto;
+        text-align: center;
+        justify-content: center;
+        grid-column: 1/4;
+        grid-row: 2;
+        border-top: 1px solid white;
+    }

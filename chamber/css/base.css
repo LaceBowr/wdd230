@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display&family=IBM+Plex+Serif:ital@1&display=swap');
 @charset "UTF-8";
-*{
+
+* {
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-size: 16px;
-    font-family:IBM Plex Serif italic;
+    font-family: IBM Plex Serif italic;
 }
+
 /***************************************************/
 header img {
     width: 25%;
@@ -15,11 +18,12 @@ header img {
     padding-right: 10px;
 }
 
-header{
+header {
     border-radius: 0 0 5px 5px;
     padding: 10px;
 
 }
+
 header,
 footer {
     background-color: #9bb5c5;
@@ -34,7 +38,7 @@ footer {
 header,
 main,
 footer {
-    
+
     max-width: 767px;
     margin: 0 auto;
 }
@@ -55,19 +59,19 @@ header p {
 
 .social {
     margin-right: 1.7rem;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    
+
 }
 
 .social svg {
     width: 25px;
     height: auto;
-    
+
 }
 
 aside {
-    display:float;
+    display: float;
     flex-direction: column;
     justify-content: space-around;
 
@@ -107,7 +111,8 @@ div.new-release {
 h2.new-release {
     border: transparent;
 }
-p.new-release{
+
+p.new-release {
     font-size: 20px;
     padding: 10px;
     color: white;
@@ -117,15 +122,17 @@ p.new-release{
     margin-bottom: 10px;
 }
 
-article.spotlights{
+article.spotlights {
     min-width: none;
-    background-color:#ca9d82;;
+    background-color: #ca9d82;
+    ;
     border: .25px solid white;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    
+
 }
+
 nav {
 
     background-color: #ca9d82;
@@ -134,18 +141,15 @@ nav {
     border-radius: 5px;
     justify-content: center;
 }
+
 nav a:hover {
     background-color: white;
     color: rgb(68, 65, 65);
 
 }
-nav ul {
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-}
-nav ul li a{
-    
+
+nav ul li a {
+
     display: block;
     color: rgb(68, 65, 65);
     text-align: center;
@@ -153,7 +157,8 @@ nav ul li a{
     background: linear-gradient(90deg, transparent, white, transparent)top / var(--d, 0) 10px no-repeat;
     margin: .25em;
 }
-.active{
+
+.active {
     color: white
 }
 
@@ -177,25 +182,8 @@ nav ul li a{
     font-size: .9rem;
 }
 
-.elsinore_1874 {
-    padding: 1rem;
-    width: 100%;
-    margin-left: 2%;
-}
-
-.elsinore_1896 {
-    padding: 1.5em;
-    width: 100%;
-    margin-left: 2%;
-}
-
-.elsinore_2021 {
-    padding: 1rem;
-    width: 100%;
-    margin-left: 2%;
-}
-footer{
+footer {
     align-items: center;
     padding: 20px;
-    border-radius:  5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
 }
