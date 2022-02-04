@@ -7,8 +7,8 @@ let myName = "Laycie J. Bowers";
 let Title = "Title";
 let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"], 
 ["Lesson 03: ","lesson3/index.html"], 
-["Lesson 04:","https://www.google.com/"],
-["Lesson 05:","https://www.google.com/"], 
+["Lesson 04:","chamber/index.html"],
+["Lesson 05:","bomlist/bom.html"], 
 ["Lesson 06:","https://www.google.com/"],
 ["Lesson 07:","https://www.google.com/"],
 ["Lesson 08:","https://www.google.com/"],
