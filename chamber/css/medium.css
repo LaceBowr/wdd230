@@ -2,8 +2,21 @@
 
 @media only screen and (min-width: 37.5em) {
     h1 {
-        font-size: 2.5rem;
+        margin-left: 80px;
+        font-size: 2.50rem;
     }
+    header p{
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        
+    }
+    .social{
+        margin: auto;
+        width: 50%;
+        float: right;
+    }
+
 
     nav a {
         font-size: 2.5rem;
