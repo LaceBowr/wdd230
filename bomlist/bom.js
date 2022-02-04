@@ -1,30 +1,36 @@
 let chaptersList = [];
+function refreshList()
+{
+  //get the list element from the DOM
+  let ul = document.getElementById("list");
+  while(ul.lastChild)
+  {
+    ul.removeChild(ul.lastChild);
+  }
+
+  //loop through the list array.for each of them we need to add the HTML markup
+  //for a chapterAdd.
+  for(i = 0; i < chaptersList.length; i++) {
+    let item = chaptersList[i]  
+    let li = document.createElement("li");
+    li.innerHTML = `<li ${item.complete ? 'class="strike"' : ""}>
+    <p>${item.detail}</p>
+    <div class ="listcontainer">
+      <span data-function="delete" data-detail="${item.detail}">❎</span>
+    </div>
+  </li>`;
+      ul.appendChild(li);
+  }
+}
 function chapterAdd() {
 
     let fav = document.getElementById("favchap").value;
-  
-    //get the list element from the DOM
-    let ul = document.getElementById("list");
-    while(ul.lastChild)
+    if (!fav)
     {
-      ul.removeChild(ul.lastChild);
+      return;
     }
-    //make sure it is empty
-    document.getElementById("favchap").value = '';
     chaptersList.push({detail:fav, complete:false});
-    //loop through the list array.for each of them we need to add the HTML markup
-    //for a chapterAdd.
-    for(i = 0; i < chaptersList.length; i++) {
-      let item = chaptersList[i]  
-      let li = document.createElement("li");
-      li.innerHTML = `<li ${item.complete ? 'class="strike"' : ""}>
-      <p>${item.detail}</p>
-      <div class ="listcontainer">
-        <span data-function="delete" data-detail="${item.detail}">❎</span>
-      </div>
-    </li>`;
-        ul.appendChild(li);
-    }
+    refreshList();
 }
 document.querySelector('#addChapButton').addEventListener('click', chapterAdd);
 
@@ -33,7 +39,7 @@ function deleteChapter(chaptersList_detail) {
   chaptersList = chaptersList.filter(
     (chapter) => chapter.detail != chaptersList_detail
   );
-  chapterAdd(false);
+  refreshList();
 }
 
 document.getElementById("list").addEventListener("click", manageTasks);
