@@ -29,6 +29,7 @@ function chapterAdd() {
     {
       return;
     }
+    document.getElementById("favchap").value = "";
     chaptersList.push({detail:fav, complete:false});
     refreshList();
 }
