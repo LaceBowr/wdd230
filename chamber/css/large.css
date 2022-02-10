@@ -34,17 +34,24 @@
         padding: 10px;
         margin: auto;
     }
-    .nthChild{
+    /*.leftColumn{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         
+    }*/
+    .leftColumn{
+        font-size: 18px;
+        grid-template-columns: 1fr;
     }
 
-    .event {
+    .mightyMouse {
         display: grid;
         grid-column: 1/2;
-        grid-row: 1/2;
+    }
+    .towtruck{
+        margin: auto;
+        justify-content: center;
     }
 
     .weather {
@@ -57,17 +64,17 @@
     .join {
         display: grid;
         grid-column: 1/2;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 
 
-    .hero {
+    .hero {   
         color: black;
         font-size: 35px;
         align-items: center;
         display: grid;
         grid-column: 2/4;
-        grid-row: 1/2;
+        grid-row: 1/3;
         margin: 0;
     }
     .herodiv{
@@ -85,20 +92,27 @@
         width: auto;
         height: 250px;
     }
-    
+    main picture.lgImage{
+        width: 90%;
+        margin: 0 0 0 5%;
+        
+    }
+    main picture.lgImage img{width: 100%;}
+    .oldRock{
+        width: 50%;
+    }
     .callToAction{
         color: white;
         font-family: 'Open Sans' 10pt;
         position: absolute;
         justify-items: end;
-        margin-top: -200px;
-        margin-right: none;
-        margin-left: 250px;
+        margin: -25% 10%;
         background: radial-gradient(#022b18, #11462d);
         border-radius: 30px;
         border: 1px solid gray;
         padding: .5rem;
         box-shadow: 0 0 30px #333;
+        
     }
     .news-release{
         font-size: 35px;
@@ -120,29 +134,32 @@
 
     .spotlights {
         display: grid;
-        grid-column: 4/5;
-        grid-row: 1;
+        grid-template-columns: 1/2;
+        grid-template-rows: 1/3;
         padding-right: 10px;
         padding-left: 10px;
     }
 
     .spot1 {
         display: grid;
-        grid-column: 4;
+        grid-column: 4/5;
         grid-row: 1/2;
+        font-size: 16px;
     }
 
     .spot2 {
         display: grid;
-        grid-column: 4;
+        grid-column: 4/5;
         grid-row: 2/3;
+        margin: 0 0 0 0;
     }
 
     .spot3 {
         display: grid;
-        grid-column: 4;
+        grid-column: 4/5;
         grid-row: 3/4;
     }
+    
 
     footer {
         display: grid;

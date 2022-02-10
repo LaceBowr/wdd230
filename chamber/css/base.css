@@ -43,9 +43,40 @@ footer {
     
     margin: 0 auto;
 }
+main picture.lgImage{
+    width: 90%;
+    margin: 0 0 0 5%;
+    
+}
+main picture.lgImage img{width: 100%;}
+main picture.medImage{
+    width: 30%;
+    margin: 0 0 0 35%;
+    
+}
+main picture.medImage img{width: 100%;}
+main picture.medWideImage{
+    width: 90%;
+    margin: 0 0 0 5%;
+    
+}
+main picture.medWideImage img{width: 100%;}
+main picture.mediumImage{
+    width: 50%;
+    margin: 5% 0 0 25%;
+    
+}
+main picture.mediumImage img{width: 100%;}
+
+main picture.smallWideImage{
+    width: 50%;
+    margin: 5% 0 0 25%;
+    
+}
+main picture.smallWideImage img{width: 100%;}
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 5px;
     margin: 10px;
 }
@@ -196,10 +227,10 @@ p.new-release {
     margin-bottom: 10px;
 }
 
-article.spotlights {
-    min-width: none;
+.spotlights {
+    
     background-color: #dec885;
-    ;
+    width: 100%;
     border: .25px solid white;
     border-radius: 5px;
     padding: 10px;
@@ -207,9 +238,16 @@ article.spotlights {
 
 }
 .spot1{
+    display: flex;
+    width: 100%;
+    height: auto;
 
 }
 .spot2{
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 0;
+    height: auto;
 
 }
 
@@ -223,39 +261,6 @@ nav {
     border-radius: 5px;
     justify-content: center;
 }
-/*.menu{
-    list-style: none;
-    padding: 0;
-}
-.menu li {
-    display: none;
-}
-.menu a {
-    display: block;
-    padding: .75rem;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
-}
-.menu a.ham::before{
-    content: "🍔 ";
-}
-
-.menu a:hover {
-    background-color: #dec885;
-    color: #2b2b2b;
-}
-menu.responsive li{
-    display: block;
-}
-
-.responsive a.menu::before {
-    content: "❌ ";
-}
-*/
 nav ul li a {
     display: block;
     color: #dec885;
@@ -263,10 +268,6 @@ nav ul li a {
     font-size: 35px;
     margin: .25em;
 }
-
-/*.active {
-    color: white
-}*/
 
 .headings {
     display: flex;
@@ -288,11 +289,19 @@ nav ul li a {
 }
 
 footer {
+    display: block;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     border-radius: 5px 5px 0 0;
 }
-.image2Logo{
-    width: 20%;
-    height: auto;
+h3{
+    display: flex;
+}
+.log02{
+    width: 10px;
+}
+.lastModified{
+    justify-content: center;
+    padding: .25em;
 }
