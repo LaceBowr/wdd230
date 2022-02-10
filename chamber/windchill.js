@@ -12,6 +12,6 @@ if(temperature <= 50 && speed > 3){
 document.querySelector("#windChill").textContent = windchill;
 
 function windchill(temperature, speed) {
-    windchill = (35.74 + (0.6215 * temperature)- (35.75 * (speed^0.16)) + (0.4275 * (temperature * (speed^0.16))))
+    windchill = (35.74 + (0.6215 * temperature)- (35.75 * (math.pow(speed, 0.16)) + (0.4275 * (temperature * (math.pow(speed, 0.16))))
     return answer
 }
