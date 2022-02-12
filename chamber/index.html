@@ -209,16 +209,16 @@
                                     <source srcset="images\rainy.jpg" media="(min-width: 300px)">
                                     <img src="images\rainy75.jpg" alt="image of cloud with rain"></center>
                             </picture>
-                            <p>Currently:<span id="temperature">80</span>&#176;F </p>
+                            <p>Currently:<span id="temperature">49</span>&#176;F </p>
                             <picture class="smallWideImage">
                                 <center>
                                     <source srcset="images\fourty100.png" media="(min-width: 76px) and (max-width: 199px)">
                                     <source srcset="images\fourty.png" media="(min-width: 200px)">
                                     <img src="images\fourty75.png" alt="41 degrees"></center>
                                 </picture>
-                            <p><small>Wind Speed:<span id="windSpeed">3</span>mph</small>
+                            <p><small>Wind Speed:<span id="windSpeed">5</span>mph</small>
                             </p>
-                            <p>Wind Chill:<span id="windChill"></span></p>
+                            <p>Wind Chill:<span id="windChill"></span>&#176;F</p>
                         </h2>
                     </div>
                 </article>
@@ -256,6 +256,7 @@
         </article>
     </footer>
 </body>
-<script src="js/windchill.js"></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+<script type="module" src="js/windchill.js"></script>
 
 </html>

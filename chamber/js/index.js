@@ -20,5 +20,5 @@ hambutton.addEventListener("click", () =>
 {maninnav.classList.toggle("responsive")}, false);
 
 //to solve the mid resizing issue with responsive class on 
-window.onresize = () => {of (window.innerWidth >760)
+window.onresize = () => { (window.innerWidth >760)
 mainnav.classList.remove("responsive")};
