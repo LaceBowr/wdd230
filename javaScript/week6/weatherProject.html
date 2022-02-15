@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherProject.css">
     <title>Weather Generator</title>
 </head>
 <main>
@@ -12,18 +14,27 @@
     </Header>
     <aside>
         <h2 id="today">
-        Today's Date is: <h3 id="dayOfWeek"></h3>
-        <span id="date"></span>
-        </h2> 
+            Today's Date is: <h3 id="dayOfWeek"></h3>
+            <span id="date"></span>
+        </h2>
     </aside>
 
-<body>
-    <h2>Lets see how your day is going to look:</h2>
-    <label for="cityStateCountry">What is your (City, State Country (in this format)): </label>
-    <input type="text">    
-    <button id="moveCurrentDateAndDay">GENERATE:</button>
-    
-</body>
+    <body>
+        <h2>Lets see how your day is going to look:</h2>
+        <label id="city"><p> What is your City (ie:Ancorage) </p></label>
+        <input type="text" id="cityStateCountry">
+        <button id="moveCurrentDateAndDay">GENERATE</button>
+        <article class="weather">
+            <h2>Weather Results:</h2>
+            <img id="weatherIcon">
+            <h3><span id="iconDesc"></span></h3>
+            <p>Temp: <span id="temp"></span> &#176;F</p>
+            <p>Wind Speed: <span id="windspeed"></span> mph</p>
+            <p>Wind Chill: <span id="windchill"></span> &#176;F</p>
+        </article>
+
+    </body>
 </main>
 <script src="weatherProject.js"></script>
+
 </html>
