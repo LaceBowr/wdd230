@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        main{
+            display: block;
+        }
+        img.data-source{
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading</title>
+    
+</head>
+<header>
+    <h1>Discover Elsinore:</h1>
+</header>
+<body>
+    <section>
+        <picture>    
+            <img src="placeholder.jpg" data-src="forevermoreFilms.jpg" alt="Forevermore films Monroe, Utah">
+        </picture>
+    </section>
+    <section>
+        <picture>
+            <img src="placeholder.jpg" data-src="kemco.jpg" alt="Kemco Electric, Kevin Moore and Sons: Elsinore, Utah">
+        </picture>
+        <section>
+    <picture>
+        <img src="placeholder.jpg" data-src="mysticHotSprings.jpg" alt="Mystic Hot springs: Monroe, Utah">
+    </picture>
+    <picture>
+        <img src="placeholder.jpg" data-src="sevierSchoolDistrict.jpg" alt="Sevier School District">
+    </picture>
+    <picture>
+        <img src="placeholder.jpg" src="placeholder.jpg" data-src="sorensonRanch.jpg" alt="Sorensons Ranch School for Youth Elsinore, Utah">
+    </picture>
+    <picture>
+        <img src="placeholder.jpg" data-src="cowboyCorral2.jpg" alt="Cowboy Corral Private club Elsinore, Utah">
+    </picture>
+</body>
+<script src="lazyloading.js"></script>
+</html>
