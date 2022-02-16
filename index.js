@@ -13,7 +13,7 @@ let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"],
 ["Lesson 06:","chamber/index.html"],
 ["Lesson 07A:","lesson7/presentation.html"],
 ["Lesson 07B:","lesson7/lazyload.html"],
-["Lesson 07C:","https://www.google.com/"]
+["Lesson 07C:","https://www.google.com/"],
 ["Lesson 08:","https://www.google.com/"],
 ["Lesson 09:","https://www.google.com/"], 
 ["Lesson 10:","https://www.google.com/"], 
