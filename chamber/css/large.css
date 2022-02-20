@@ -4,7 +4,8 @@
 @media only screen and (min-width: 60em) {
 
     header {
-        width: 100%;
+        margin: auto;
+        display: flex;
     }
     .logo{
         margin: auto;
@@ -25,12 +26,23 @@
         width: 45px;
 
     }
+    nav{
+        display: block;
+    }
+    nav ul li a {
+        display: block;
+        color: #dec885;
+        text-align: center;
+        font-size: 35px;
+        margin: 0.25em;
+    }
 
 
     main {
         max-width: 75%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1/4;
         padding: 10px;
         margin: auto;
     }
@@ -161,34 +173,41 @@
     }
     
 
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    footer.ending {
+       display: flex;
+       justify-content: center;
     }
 
     .image2Logo {
-        grid-column: 1fr/2fr;
-        grid-row: 1;
-        width: 30%
+        margin-left: 200px;
+        
     }
 
-    h3 {
+    h4 {
         font-family: IBM Plex Serif italic;
-        grid-column: 1fr/4fr;
-        grid-row: 1;
+        justify-items: center;
+        margin-left: 55px;
+    }
+    p{
+        margin: 55px;
     }
 
     .contactInfo {
-        grid-column: 4/5;
+        justify-content: center;
+        padding: 5px 55px 55px 55px;
     }
 
     .lastModified {
+        display: block;
+        margin-top: 100px;
         margin-left: auto;
-        text-align: center;
+        margin-right: 400px;
+        text-align: left;
         justify-content: center;
-        grid-column: 1/4;
-        grid-row: 2;
         border-top: 1px solid white;
+    }
+    .business img:hover{
+        opacity: .5;
+        
     }
 }
