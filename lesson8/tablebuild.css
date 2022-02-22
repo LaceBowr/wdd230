@@ -1,5 +1,5 @@
 body {
-    font-family: Ubuntu, sans-serif;
+    font-family: Bold Ubuntu, sans-serif;
     background-color: #fbfafa;
     
 
@@ -48,13 +48,21 @@ tbody tr:nth-child(even){
     
     background-color: var(--zebra);
 }
+thead{
+    font-size:  x-large;
+}
 
 thead,
 tbody,
 tfoot {
     
+    font-weight:bold;
     margin: 25px 25px 25px 25px;
 
+}
+tfoot{
+    font-weight: 100;
+    font-size: smaller;
 }
 
 .rowDarkest{
