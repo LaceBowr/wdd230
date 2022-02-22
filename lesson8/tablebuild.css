@@ -6,8 +6,7 @@ body {
 }
 
 :root {
-    justify-content: center;
-    justify-items: center;
+    
     --back: hsla(150,50%,30%,1);
     --back2: hsla(150,50%,30%,.5);
     --fordark: hsla(0,0%,10%,1);
