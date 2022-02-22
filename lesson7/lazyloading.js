@@ -4,7 +4,7 @@ const images = document.querySelectorAll("[data-src]");
 //optional parameters being set for the IntersectionalObserver
 const imgOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 30px 0px"
+    rootMargin: "0px 0px -500px 0px"
 };
 
 function preloadImage(img) {
@@ -19,7 +19,7 @@ function preloadImage(img) {
 //    image.onload = () => {image.removeAttribute("data-src");};
 //};
 
-const imgObserver = new IntersectionObserver((entries, imgObserver)=> {
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 //first check to see if Intersenction Observer is supported
 entries.forEach(entry => {
     if(!entry.isIntersecting) {
