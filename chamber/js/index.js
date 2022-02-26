@@ -11,8 +11,13 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 }).format(now);
 // long, medium, short options ... try them
 
+let pagename = document.location.href.split('?')[0];
+if(pagename.endsWith('thankyou.html'))
+{
+    datefield.setAttribute('hidden', 'true');
+}
 datefield.innerHTML = `<em>${fulldate}</em>`;
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+//datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 const hambutton = document.querySelector(".menu");
 const mainnav = document.querySelector(".ham");
 hambutton.addEventListener("click", () =>
