@@ -44,11 +44,66 @@ main {
     padding: 0 45px 0 0 0;
     /*margin: auto;*/
 }
+form fieldset {
+    margin: 2rem 0 1rem 3rem;
+    border: 1px solid #4fafec;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    font-size: xx-large;
+    color: #4fafec;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+
+}
+form label.top, form div{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+
+}
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem .75em .75em .75em;
+    color: #555;
+    width: 90%;
+    max-width: 40rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form input.submitBtn {
+    border:none;
+    background-color: #022b18;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+
+}
+
+form label.top input:required {
+    border-left:#9c2c13 solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: #022b18 solid 6px;
+}
 body{
     display: block;
 }
 main picture.lgImage{
-    width: 90%;
+    width: 85%;
     margin: 0 0 0 5%;
     
 }
@@ -94,7 +149,6 @@ header p {
 }
 
 .social {
-    margin: 90px;
     width: 50%;
     margin-bottom: 30px;
     max-width: 34em;
@@ -102,6 +156,7 @@ header p {
 }
 
 .social svg {
+    margin-right: 70px;
     margin-left: 10px;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -322,6 +377,6 @@ h3{
 p footer{
     display: wrap;
 }
-img:hover{
+footer img:hover{
     opacity: none;
 }
