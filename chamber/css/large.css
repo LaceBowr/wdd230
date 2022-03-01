@@ -3,90 +3,155 @@
 
 @media only screen and (min-width: 60em) {
 
+    /*{max-width:960px;
+    width:95%;
+    margin: auto 0;
+    object-fit: cover;}*/
+
     header {
-        margin: auto;
-        display: flex;
+        display: grid;
+        grid-template-columns: 20% 20% 60%;
+        justify-items: center;
+        background-color: #4fafec;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
     }
     .logo{
-        margin: auto;
-        width: 50%;
+        width: 100%;
+        display: block;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li {
+    float: right;
     }
 
-    header p{
-        margin-top: 20px;
-        font-size: 20px;
-    }
-    .social{ 
-        margin: auto;
-        width: 50%;
-        
-    }
-    .social svg{
-        margin-top: -25px;
-        width: 45px;
-
+    li a {
+    display: block;
+    padding: 8px;
+    background-color: #022b18;
+    color: #dec885;
     }
     nav{
-        display: block;
-    }
-    nav ul li a {
-        display: block;
+        background-color: #022b18;
         color: #dec885;
-        text-align: center;
-        font-size: 35px;
-        margin: 0.25em;
+        font-size: 20px;
+        width: 100%;
+    }
+    nav.menu.responsive{
+        background-color: #022b18;
+        color: #dec885;
+        font-size: 20px;
+        width: 80%;
+    }
+    nav ul li{
+        background-color:#022b18; 
+    }
+    .social {
+        width: 60%;
+        margin-bottom: 30px;
+        max-width: 34em;
+
     }
 
+    .social svg {
+        margin-right: 70px;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        float: right;
+        width: 30px;
+        height: auto;
+        
+    }
+    div.date{
+        display: flex;
+        width: 100%;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 40%;
+        margin: 0.5rem;
+        border: 1px solid #2b2b2b;
+        padding: 0.75rem;
+        background-color:#dec885;
+        border-radius: 5px;
+        text-align: center;
+    }
 
     main {
-        max-width: 75%;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column: 1/4;
-        padding: 10px;
-        margin: auto;
-    }
-    /*.leftColumn{
-        display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 20% 60% 20%;
         grid-template-rows: 1fr 1fr 1fr;
-        
-    }*/
+        padding: 10px;
+
+    }
+
     .leftColumn{
+        width: 100%;
+        height: 100%;
         font-size: 18px;
-        grid-template-columns: 1fr;
     }
 
     .mightyMouse {
-        display: grid;
-        grid-column: 1/2;
+        width: 100%;
+        height: 100%;
+        grid-gap: 10px;
+        margin-bottom: 10px;
     }
     .towtruck{
-        margin: auto;
-        justify-content: center;
+        width: 70%;
+        justify-content: left;
     }
+
 
     .weather {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 2/3;
-
+        width: 100%;
+        height: 100%;
+        margin-top: -40px;
+        grid-gap: 10px;
     }
+
 
     .join {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 3/4;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+        margin-top: -20px;
+    }
+    .callToAction{
+        color: white;
+        position: absolute;
+        margin: -85px 0 0 100px;
+        background: radial-gradient(#022b18, #11462d);
+        border-radius: 30px;
+        border: 1px solid gray;
+        padding-left: -5px;
+        box-shadow: 0 0 30px #333;
+        object-fit: cover;
+    }
+    .middleColumn{
+        margin-left: 15%;
+        margin: .5em 2em;
     }
 
 
-    .hero {   
+    .hero { 
+        grid-gap: 10px;  
         color: black;
         font-size: 35px;
         align-items: center;
-        display: grid;
-        grid-column: 2/4;
-        grid-row: 1/3;
+        width: 100%;
+        height: 250%;
         margin: 0;
     }
     .herodiv{
@@ -95,7 +160,7 @@
     }
 
 
-    .heroPlaceHolder{
+    .oldRock{
         margin: 20px auto;
         background-color: #eee;
         border: 1px solid #333;
@@ -113,74 +178,42 @@
     .oldRock{
         width: 50%;
     }
-    .callToAction{
-        color: white;
-        font-family: 'Open Sans' 10pt;
-        position: absolute;
-        justify-items: end;
-        margin: -25% 10%;
-        background: radial-gradient(#022b18, #11462d);
-        border-radius: 30px;
-        border: 1px solid gray;
-        padding: .5rem;
-        box-shadow: 0 0 30px #333;
-        
-    }
-    .news-release{
-        font-size: 35px;
-        color: white;
-        margin-bottom: 0;
-
-    }
-    .newrelease{
-        color: white;
-        border: none;
-        
-    }
-
-    .new-release {
-        display: grid;
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-
-    .spotlights {
-        display: grid;
-        grid-template-columns: 1/2;
-        grid-template-rows: 1/3;
-        padding-right: 10px;
-        padding-left: 10px;
+    .rightColumn{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 80px;
     }
 
     .spot1 {
-        display: grid;
-        grid-column: 4/5;
-        grid-row: 1/2;
-        font-size: 16px;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .spot2 {
-        display: grid;
-        grid-column: 4/5;
-        grid-row: 2/3;
-        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        grid-gap: 10px;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        
     }
 
     .spot3 {
-        display: grid;
-        grid-column: 4/5;
-        grid-row: 3/4;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    
-
-    footer.ending {
-       display: flex;
-       justify-content: center;
-    }
-
-    .image2Logo {
-        margin-left: 200px;
-        
+    footer{
+        display: flex;
+        background-color: #4fafec;
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        padding: 1rem;
+        justify-content: center;
     }
 
     h4 {
@@ -210,4 +243,5 @@
         opacity: .5;
         
     }
+ 
 }
