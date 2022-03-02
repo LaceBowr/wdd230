@@ -1,0 +1,46 @@
+
+*{   max-width:960px;
+  width:95%;
+  margin:5px auto;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+section{
+  width: 20%;
+  height: 60%;
+  margin: 1%;
+  background-color: rgb(6, 32, 23);
+  color:rgb(99, 43, 11);
+  padding: 60px 60px;
+  }
+.cardsection {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin: 0.25rem;
+  border: 1px solid #bbb;
+  align-items: center;
+  }
+p{
+    color: tan 18px;
+    min-height: 60px;
+  } 
+img{
+  width: auto;
+  max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+  } 
+li > img {
+  width: auto;
+  height: 30px;
+  } 
+  footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+  }
