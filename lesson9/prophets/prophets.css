@@ -1,17 +1,80 @@
-
+/* large view */
 *{   max-width:960px;
   width:95%;
   margin:5px auto;
+}
+body{
+  background-color: rgb(99, 43, 11);;
+  margin: 10px;
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
   }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
 div.cardsection{
   display: grid;
+  border-radius: 1px 1px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 6fr;
+}
+section{
+  width: 100%;
+  grid-row: 1fr;
+  height: auto;
+  margin: 0;
+  background-color: rgb(6, 32, 23);
+  color:rgb(99, 43, 11);
+  padding: 60px 60px;
+  }
+.cardsection {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin: 0;
+  border: none;
+  align-items: center;
+  }
+
+img{
+  width: auto;
+  max-width: 300px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+  } 
+
+
+  footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+  }
+
+
+
+  /* medium view */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(99, 43, 11);;
+  }
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  .img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+div.cardsection{
+  display: grid;
+  border-radius: 1px 1px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 9fr;
 }
 section{
   width: 100%;
@@ -27,13 +90,10 @@ section{
   width: 33.33%;
   padding: 5px;
   margin: 0.25rem;
-  border: 1px solid #bbb;
+  border: none;
   align-items: center;
   }
-p{
-    color: tan 18px;
-    min-height: 60px;
-  } 
+
 img{
   width: auto;
   max-width: 325px;
@@ -41,12 +101,63 @@ img{
   height: 200px;
   border: 1px solid #333;
   } 
-li > img {
-  width: auto;
-  height: 30px;
-  } 
+
 
   footer {
     border-top: 1px solid #555;
     padding: 20px;
   }
+}
+  
+
+  /* small view */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: rgb(99, 43, 11);;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      }
+      .img {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      }
+    div.cardsection{
+      display: grid;
+      border-radius: 1px 1px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 17fr;
+    }
+    section{
+      width: 100%;
+      grid-row: 1fr;
+      height: auto;
+      margin: 1%;
+      background-color: rgb(6, 32, 23);
+      color:rgb(99, 43, 11);
+      padding: 60px 60px;
+      }
+    .cardsection {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+      margin: 0.25rem;
+      border: none;
+      align-items: center;
+      }
+    img{
+      width: auto;
+      max-width: 325px;
+      box-shadow: 0 0 30px #777;
+      height: 200px;
+      border: 1px solid #333;
+      } 
+    
+      footer {
+        border-top: 1px solid #555;
+        padding: 20px;
+      }
+  }
+  
