@@ -8,10 +8,15 @@
   clear: both;
   display: table;
   }
-
+div.cardsection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6fr;
+}
 section{
-  width: 20%;
-  height: 60%;
+  width: 100%;
+  grid-row: 1fr;
+  height: auto;
   margin: 1%;
   background-color: rgb(6, 32, 23);
   color:rgb(99, 43, 11);
@@ -40,6 +45,7 @@ li > img {
   width: auto;
   height: 30px;
   } 
+
   footer {
     border-top: 1px solid #555;
     padding: 20px;
