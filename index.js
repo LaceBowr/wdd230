@@ -16,7 +16,7 @@ let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"],
 ["Lesson 07C:","chamber/discover.html"],
 ["Lesson 08A:","lesson8/tablebuild.html"],
 ["Lesson 08B:","chamber/join.html"],
-["Lesson 09:","lesson9/prophets/prophets.html"], 
+["Lesson 09:","lesson9/prophets.html"], 
 ["Lesson 10:","https://www.google.com/"], 
 ["Lesson 11:","https://www.google.com/"]];
 
