@@ -29,18 +29,18 @@ fetch(requestURL)
         h4.textContent = `Birthplace: ${prophet.birthplace}`;
         // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
         portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+        portrait.setAttribute('alt', `Portait of Prophet #${prophet.order} ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
       
-        if (prophet.order === 1){
-          order = `${prophet.order}st`;
-        } else if (prophet.order === 2){
-          order = `${prophet.order}nd`;
-        } else if (prophet.order === 3){
-          order = `${prophet.order}rd`;
-        } else {
-          order = '${prophet.order}th';
-        }
+        // if (prophet.order === 1){
+          // order = `${prophet.order}st`;
+        // } else if (prophet.order === 2){
+          // order = `${prophet.order}nd`;
+        // } else if (prophet.order === 3){
+          // order = `${prophet.order}rd`;
+        // } else {
+          // order = `${prophet.order}th`;
+        // }
         // Add/append the section(card) with the h2 element
         card.appendChild(h2);
         card.appendChild(portrait);

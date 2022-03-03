@@ -101,6 +101,10 @@
         height: 100%;
         font-size: 18px;
     }
+    img.oldRockSchool{
+        height: 300px;
+        width: 60%;
+    }
 
     .mightyMouse {
         width: 100%;
@@ -213,8 +217,8 @@
         border-radius: 5px 5px 0 0;
         width: 100%;
         padding: 1rem;
-        justify-content: center;
     }
+    
 
     h4 {
         font-family: IBM Plex Serif italic;
