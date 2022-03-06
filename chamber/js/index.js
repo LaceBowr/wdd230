@@ -84,6 +84,7 @@ localStorage.setItem("visits-ls", numVisits);
 //show todays date.
 //todayDisplay.textContent = Date.now();
 
+//Display Weather and the windchill if it applies
 async function getWeather(){
     let apiInfo = `https://api.openweathermap.org/data/2.5/weather?q=elsinore,UT,US&units=imperial&appid=f59a4105de49f60386b736f3f818131c`;
     const response = await fetch(apiInfo);
@@ -126,3 +127,19 @@ function calulateWindChill(speed, temp) {
     }
 }
 getWeather().then(fillData).then(getIconInfo);
+
+// the Hamburger Icon on the medium and small screens js is as follows
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", ()=> {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", ()=> {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    }))

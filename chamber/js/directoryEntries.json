@@ -1,0 +1,75 @@
+{"businesses":[
+	{
+	"Business": "Forevermore Films",
+	"Tel": "801 - 499 - 9401",
+	"Address": "878 s West Redview Dr. Monroe - UT 84754",
+	"Email": "brad @forevermorefilms.com",
+	"img":"images/cardsSmall/forevermoreLogoCard.jpg"
+},{
+	"Business": "Kmeco",
+	"Tel": "435 - 527 - 3866",
+	"Address": "77 W. 100 N. Elsinore- UT 84724",
+	"Email": "officekmeco@gmail.com",
+	"img": "images/cardsSmall/kmecoLogoCard.jpg"
+},{
+	"Business": "Sunny Shopper",
+	"Tel": "435 - 527 - 4644",
+	"Address": "1 S. 300 W. Elsinore- UT 84724",
+	"Email": "gasbuddy.com",
+	"img": "images/cardsSmall/silverEaglecard.jpg"
+},{
+	"Business": "Mystic Hot Springs",
+	"Tel": "435 - 527 - 3286",
+	"Address": "1 S. 300 W. Monroe- UT 84754",
+	"Email": "mystichotsprings.com",
+	"img": "images/cardsSmall/mysticlogoCard.jpg"
+},{
+	"Business": "Sevier Heating and Air",
+	"Tel": "435 - 527 - 4127",
+	"Address": "60 S. Center St. Elsinore- UT 84724",
+	"Email": "info@sevierseating.com",
+	"img": "images/cardsSmall/sevierHeatingCard.jpg"
+},{
+	"Business": "Mighty Mouse Motors",
+	"Tel": "435 - 201 - 1111",
+	"Address": "435 North Center St. Elsinore- UT 84724",
+	"Email": "mousesalvageyard@gmail.com",
+	"img": "images/cardsSmall/mouseMotorsLogoCard.jpg"
+},{
+	"Business": "Sevier School District",
+	"Tel": "435 - 896 - 8214",
+	"Address": "180 East 600 North Richfield- UT 84701",
+	"Email": "www.seviersd.com",
+	"img": "images/cardsSmall/sevierSDLogoCard.jpg"
+},{
+	"Business": "Mortgage Brokers & Sales",
+	"Tel": "435 - 275 - 2793",
+	"Address": "20 E. 1000 S. St. Richfield- UT 84701",
+	"Email": "redrockcentral.com",
+	"img": "images/cardsSmall/redRockRECard.jpg"
+},{
+	"Business": "Sorenson's Ranch School",
+	"Tel": "435 - 893 - 7318",
+	"Address": "410 N. 100 E. Richfield- UT 84701-1828",
+	"Email": "www.sorensonsranch.com",
+	"img": "images/cardsSmall/sorensonRanchCard.jpg"
+},{
+	"Business": "Paul Torgerson Mortgages",
+	"Tel": "435 - 979 - 7951",
+	"Address": "20 E. 1000 S. Richfield- UT 84701",
+	"Email": "torgersonpaul@gmail.com",
+	"img": "images/cardsSmall/TorgersonMortgagesCard.jpg"
+},{
+	"Business": "J-Contractors Inc.",
+	"Tel": "435 - 979 - 7929",
+	"Address": "174 W. Main Street Elsinore- UT 84724",
+	"Email": "www.jensenbuilders.com",
+	"img": "images/cardsSmall/jContractingCard.jpg"
+},{
+	"Business": "Sevier Office Supply",
+	"Tel": "435 - 527 - 4644",
+	"Address": "1 S. 300 W. Elsinore- UT 84724",
+	"Email": "www.sevierofficesupply.com",
+	"img": "images/cardsSmall/sevierOfficeLogo1.jpg"
+}]
+}
