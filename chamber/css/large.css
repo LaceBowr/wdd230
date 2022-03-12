@@ -1,143 +1,1215 @@
 /* Larger viewports */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display&family=IBM+Plex+Serif:ital@1&display=swap');
-
-@media only screen and (min-width: 60em) {
-
-    /*{max-width:960px;
-    width:95%;
-    margin: auto 0;
-    object-fit: cover;}*/
-
-    header {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        text-align: center;
-        background-color: #4fafec;
-        width: 100%;
-        border-radius: 0 0 5px 5px;
-    }
-    .logo{
-        width: 100%;
-        display: block;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
+/* index2.html css for Large view */
+*{
+    margin: 0;
+    box-sizing: border-box;
     
-    li {
-    float: right;
-    text-align: center;
-    }
+}
+/* large view */
+/* here is the CSS content for the header section of the Index page */
 
-    li a {
+main{
+    background-color: gray;
+    grid-column: 2/5;
+    grid-row:2/5;
+    max-width: 960px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+body{
+    justify-content: left;
+    margin:0;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(1fr 2fr 1fr) minmax(0px, 1fr);
+    grid-template-rows: auto;
+
+}
+header{
+    background-color: #4fafec;
+    grid-column: 2/5;
+    grid-row:1/2;
+}
+#logo{
+    margin: auto;
+
+}
+#headline{
+    grid-column: 2/3;
+    grid-row:1/2;
+
+}
+/* h1{ */
+    /* margin: 25%; */
+/* } */
+nav#menu{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+nav, #greenbar{
+    position: sticky;
+    top:0;
+    grid-column: 2/5;
+    color: #DEC885;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    background-color: #022b18;
+    font-size: 20px;
+}
+nav ul{
+    
+    list-style-type: none;
+    margin-left: 20px;
+    padding:0;
+}
+nav ul li a{
+    
+    display: inline-block;
+    color: #DEC885;
+}
+nav a:hover {
+    background-color: white;
+    font-size: 45px;
+}
+.nav-item{
+    
+    margin: 5px 5px 5px 5px;
+    display: inline-flex;
+    padding: 4px;
+}
+img.oldRockSchool{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+div#headline{
+    display:flex;
+    margin-left: 25%;
+    grid-column: 2/5;
+    grid-row:1/2;
+
+}
+
+h1#heading{
+    justify-content: center;
+    text-align: center;
+    grid-column: 3/5;
+    grid-row:1/-1; 
+    font-size: 40px;    
+}
+
+div.baseline{
+    grid-column: 4/5;
+    grid-row:1/2;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+section.facebookLinkedIn{
+    display: flex;
+    width: 40%;
+}
+
+aside{
+    border:solid 1pt black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: #DEC885;
+}
+
+/* here is the CSS content for the main section of the Index page */
+
+#gallery{
+    background-color: darkgray;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/5;
+}
+
+.grid-column1{
+    background-image: url(/chamber/images/whiteRock400.jpg);
+    padding: 50px;
+    border: 1px solid white;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 100%;
+   
+
+}
+.grid-column1b{
+    background-color: red;
+    grid-column:2/3;
+    grid-row: 4/5;
+    border: 1px solid white;
+    height:100%;
+    
+}
+#grid-column2{
+    background-color: purple;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    height: 100%;
+}
+.grid-column2a{
+    background-image: url(/chamber/images/towtruck.jpg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid white;
+    width: 100%;
+    height:100%;
+}
+.grid-column2b{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border: 2px solid white;
+    background-color: orangered;
+    height: 100%;
+}
+.grid-column2c{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: 2px solid white;
+    background-color: pink;
+    margin: 10px;
+    height: 100%;
+}
+#grid-column3{
+    display: block;
+    grid-column: 3/4;
+    grid-row: 1/5;
+    height:100%;
+}
+
+.grid-column3a{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: green;
+    border: solid 1px black;
+    height: 33%;
+}
+.grid-column3b{
+    color:red;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border: solid 1px black;
+    background-image: url(/chamber/images/dadandhisbrothers.jpg);
+    justify-items: center;
+    height: 33%;
+}
+.grid-column3c{
+    background-color: yellow;
+    grid-column:4/5;
+    grid-row: 3/5;
+    border: solid 1px black;
+    height: 100%;
+}
+#gallery div{
+    border: 1px solid darkgray;
+}
+
+/* here is the footer section of the Index page*/
+footer#base{
+    grid-row: 5/6;
+    grid-column: 2/6;
+    background-color: #4fafec;
+    
+    
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 960px;
+}
+
+
+.footline{
+    flex-wrap: wrap;
+    font-size: medium;
+    margin-top: 25px;
+}
+img.image2Logo{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-left: 100px;
+}
+h3#commerceLocation{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+h4#contactInfo{
+    grid-column: 4/5;
+    grid-row:5/6;
+    justify-content: space-evenly;
+    text-align: center;
+}
+h5.footline{
+    border:solid 1pt black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: #DEC885;
+}
+/* end index2.html css Large view*/
+
+
+
+/*START dummydiscover.html page CSS */
+
+*{   max-width:960px;
+    width:95%;
+    margin:5px auto;}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    justify-items: center;
+    background-color: #4fafec;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    padding: 1rem;
+
+}
+.logo{
+    width: 100%;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
     display: block;
     padding: 8px;
     background-color: #022b18;
     color: #dec885;
+  }
+nav{
+    background-color: #022b18;
+    color: #dec885;
+    font-size: 20px;
+    width: 100%;
+}
+nav.menu.responsive{
+    background-color: #022b18;
+    color: #dec885;
+    font-size: 20px;
+    width: 80%;
+}
+nav ul li{
+    background-color:#022b18; 
+}
+.social {
+    width: 60%;
+    margin-bottom: 30px;
+    max-width: 34em;
+
+}
+
+.social svg {
+    margin-right: 70px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    float: right;
+    width: 30px;
+    height: auto;
+    
+}
+div.date{
+    display: flex;
+    width: 100%;
+}
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+    margin: 0.5rem;
+    border: 1px solid #2b2b2b;
+    padding: 0.75rem;
+    background-color:#dec885;
+    border-radius: 5px;
     text-align: center;
-    }
-    nav{
-        background-color: #022b18;
-        color: #dec885;
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-    }
-    nav.menu.responsive{
-        background-color: #022b18;
-        color: #dec885;
-        font-size: 20px;
-        width:  70%;
-    }
-    nav ul li{
-        background-color:#022b18; 
-    }
-    .social {
-        width: 60%;
-        margin-bottom: 30px;
-        max-width: 34em;
+}
+.grids{
+    display: block;
+    
+}
 
-    }
+.column1-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column1-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column1-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
 
-    .social svg {
-        margin-right: 70px;
-        margin-left: 10px;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        float: right;
-        width: 30px;
-        height: auto;
-        
-    }
-     div.date{ 
-        display: flex;
-        width: 100%;
-    }
-    div.date{
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        height: 40%;
-        margin: 0.5rem;
-        border: 1px solid #2b2b2b;
-        padding: 0.75rem;
-        background-color:#dec885;
-        border-radius: 5px;
-        text-align: center;
-    }
-    .datetag{
-        width: 100%;
-    }
+}
+.column1-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column2-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column2-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
 
-    main {
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 30px;
+}
+.column2-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
 
-    }
+}
+.column2-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column3-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column3-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
 
-    .leftColumn{
-        width: 100%;
-        height: 100%;
-        font-size: 18px;
-        padding: 10px;
+}
+.column3-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column3-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+footer{
+    display: flex;
+    background-color: #4fafec;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* END discover.html/Directory.html pages of CSS */
+*{max-width:960px;
+    width:95%;
+    margin:5px auto;
+  }
+  *{max-width:960px;
+      width:95%;
+      margin: auto 0;
+      object-fit: cover;}
+  
+      header {
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+          text-align: center;
+          background-color: #4fafec;
+          width: 100%;
+          border-radius: 0 0 5px 5px;
+      }
+      .logo{
+          width: 100%;
+          display: block;
+      }
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      
+      li {
+      float: right;
+      text-align: center;
+      }
+  
+      li a {
+      display: block;
+      padding: 8px;
+      background-color: #022b18;
+      color: #dec885;
+      text-align: center;
+      }
+      nav{
+          background-color: #022b18;
+          color: #dec885;
+          font-size: 20px;
+          width: 100%;
+          text-align: center;
+      }
+      nav.menu.responsive{
+          background-color: #022b18;
+          color: #dec885;
+          font-size: 20px;
+          width:  70%;
+      }
+      nav ul li{
+          background-color:#022b18; 
+      }
+      .social {
+          width: 60%;
+          margin-bottom: 30px;
+          max-width: 34em;
+  
+      }
+  
+      .social svg {
+          margin-right: 70px;
+          margin-left: 10px;
+          margin-bottom: 40px;
+          margin-top: 40px;
+          float: right;
+          width: 30px;
+          height: auto;
+          
+      }
+       div.date{ 
+          display: flex;
+          width: 100%;
+      }
+      div.date{
+          display: flex; 
+          flex-direction: row;
+          justify-content: space-around;
+          width: 100%;
+          height: 40%;
+          margin: 0.5rem;
+          border: 1px solid #2b2b2b;
+          padding: 0.75rem;
+          background-color:#dec885;
+          border-radius: 5px;
+          text-align: center;
+      }
+      .datetag{
+          width: 100%;
+      }
+  body{
+    background-color: #fff;
+    margin: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
     }
-    img.oldRockSchool{
-        height:200px;
-        width: 60%;
+  .img {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+  div.table{
+      padding: 0;
+      margin: 0;
+      box-sizing:border-box;
+    }
+    :root {
+      
+      --back: hsla(150,50%,30%,1);
+      --back2: hsla(150,50%,30%,.5);
+      --fordark: hsla(0,0%,10%,1);
+      --forelight: hsla(0,0%,100%,1);
+      --border: hsl(0, 0%, 20%);
+      --borderlight: hsl(0,0%,20%);
+      --shadow: hsl(0, 0%, 50%);
+      --zebra: hsl(0, 0%, 93%, 1);
+      
+  }
+  
+  table {
+      
+      margin: 10px auto;
+      border: thin solid var(--border);
+      box-shadow: 0 0 30px var(--shadow);
+      border-collapse: collapse;
+  
+  }
+  tr:first-child th {
+      
+      background-color: var(--back);
+      color: var(--forelight);
+  
+  }
+  th, td{ 
+      padding: 7px 15px;
+      border: 1px solid var(--borderlight);
+  }
+  tr:nth-child(even){
+      
+      background-color: var(--zebra);
+  }
+  button{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+  }
+    /* body{
+      background: white;
+      overflow: hidden;
+    }
+    .container{
+      position: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 100%;
+      margin: 100px;
+    }
+    .icon {
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      right: -10px;
+      display: block;
+    }
+    .list,
+    .grid {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      cursor: pointer;
+      margin: 0 10px 0 0;
+    }
+    .list span{
+      width: 55px;
+      height: 4px;
+      background: rgb(3, 3, 3);
+      border: solid 1px;
+      border-radius: 10px;
+      position: absolute;
+      top: 0px;
+      left: 33px;
+    }
+    .list span:nth-child(2) {
+      top: 15px;
+    }
+    .list span:nth-child(3) {
+      top: 30px;
+    }
+    .list span:nth-child(4){
+      top: 45px;
+    }
+    .grid span {
+      width: 10px;
+      height: 10px;
+      background: #DEC885;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+    .grid span:nth-child(1){
+      top: -35px;
+      left: 110px;
+    }
+    .grid span:nth-child(2) {
+      top: -35px;
+      left: 130px;
+    }
+    .grid span:nth-child(3) {
+      top:-35px;
+      left: 150px;
+    }
+    .grid span:nth-child(4) {
+      top: -15px;
+      left: 110px;  
+    }
+    .grid span:nth-child(5) {
+      top: -15px;
+      left: 130px;
+    }
+    .grid span:nth-child(6) {
+      top: -15px;
+      left: 150px;
+    }
+    .grid span:nth-child(7){
+      top: 5px;
+      left: 110px;
+    }
+    .grid span:nth-child(8){
+      top: 5px;
+      left: 130px;
+    }
+    .grid span:nth-child(9){
+      top: 5px;
+      left: 150px;
+    }
+  
+    /*.ltg{
+      display: grid;
+      grid-template-columns: 30% 10% 10% 40% 10%;
+      grid-template-rows: 1fr 1fr 1fr;
+      margin-top: 35px;
+      grid-gap: 1px;
+     }
+    .ltg div {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: red;
+      margin: 10px;
+      box-shadow: 5px 10px 2px rgba(#fff);
+    }
+    .ltg.list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      width: 100%;
+    }
+    .ltg.list div{
+      width: 95%;
+      height: 100px;
+      margin-top: 10px;
+    } */
+  div.cardsection{
+    display: grid;
+    border-radius: 1px 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 6fr;
+    grid-gap: 20px;
+  }
+  div.table{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  div.table.tabledata{
+      display: flex;
+      width: 100%;
+  
+  }
+  
+  section{
+    width: 100%;
+    height: 100%;
+    grid-row: 1fr;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    color:#333;
+    }
+  .cardsection {
+  
+    float: left;
+    grid-gap: 8px;
+    width: 33.33%;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    align-items: center;
+    }
+  
+  img{
+    width: auto;
+    max-width: 300px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+    } 
+  
+  
+    footer {
+      border-top: 1px solid #555;
+      padding: 20px;
+    }
+    .row{
+      background-color: #DEC885;
+      padding: 40px;
+      text-align: center;
+    }
+    footer{
+          display: flex;
+          background-color: #4fafec;
+          border-radius: 5px 5px 0 0;
+          width: 100%;
+          padding: 1rem;
+      }
+      
+  
+      h4 {
+          font-family: IBM Plex Serif italic;
+          justify-items: center;
+          margin-left: 55px;
+      }
+      p{
+          margin: 55px;
+      }
+  
+      .contactInfo {
+          justify-content: center;
+          padding: 5px 55px 55px 55px;
+      }
+  
+      .lastModified {
+          display: block;
+          margin-top: 100px;
+          margin-left: auto;
+          margin-right: 400px;
+          text-align: left;
+          justify-content: center;
+          border-top: 1px solid white;
+      }
+      .business img:hover{
+          opacity: .5;
+          
+      }
+  
+    /* medium view */
+  @media screen and (max-width: 992px) {
+    body {
+      background-color: #fff;;
     }
     
-    .mightyMouse {
-        width: 100%;
-        height: 100%;
-        padding: 10px;
-        margin-bottom: 10px;
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
     }
-    .towtruck{
+    .img {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+  div.cardsection{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    border-radius: 1px 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6fr;
+    margin: 0px;
+    grid-gap: 2px;
+  }
+  section{
+    grid-row: 1fr;
+    width: 245%;
+    height: auto;
+    color: #4fafec;
+    padding: 6px;
+    margin-bottom: 55px;
+    }
+  .cardsection {
+    float: left;
+    width: 20%;
+    padding: 4px;
+    margin: 0.25rem;
+    border: none;
+    align-items: center;
+    }
+    .cardtable{
+      font-size: x-small;
+      width: 100%;
+    }
+  
+  img{
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+    } 
+  
+  
+    footer {
+      border-top: 1px solid #555;
+      padding: 20px;
+    }
+  }
+    
+  
+    /* small view */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: rgb(#fff);;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .img {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+      div.cardsection{
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        border-radius: 1px 1px;
+        grid-template-columns: 1fr;
+        padding: 40px;
+      }
+      section{
+        justify-content: center;
+        text-align: center;
         width: 100%;
+        grid-row: 1fr;
+        height: auto;
+        margin: 0;
+        background-color: rgb#DEC885;
+        padding: 60px 60px;
+        }
+      .cardsection {
+        float: left;
+        width: 33.33%;
+        margin: 0.25rem;
+        border: none;
+        align-items: center;
+        }
+      .cardtable{
+        font-size: xx-small;
+        margin-left: -10px;
+      }
+      img{
+        width: auto;
+        max-width: 325px;
+        box-shadow: 0 0 30px #777;
+        height: 120px;
+        border: 1px solid #333;
+        } 
+      
+        footer {
+          display: inline-block;
+          border-top: 1px solid #555;
+          padding: 20px;
+        }
+    }
+/* START Join.html page for CSS */
+
+footer#base{
+    grid-row: 5/6;
+    grid-column: 2/6;
+    background-color: #4fafec;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 960px;
+}
+
+
+.footline{
+    flex-wrap: wrap;
+    font-size: medium;
+    margin-top: 25px;
+}
+img.image2Logo{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-left: 100px;
+}
+h3#commerceLocation{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+h4#contactInfo{
+    grid-column: 4/5;
+    grid-row:5/6;
+    justify-content: space-evenly;
+    text-align: center;
+}
+h5.footline{
+    border:solid 1pt black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: #DEC885;
+}
+/* END Join.html page for CSS */
+@media only screen and (min-width: 60em) {
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+/* large view */
+/*HEADER INDEX2.html SECTION CSS here is the CSS content for the header section of the Index page */
+    
+    main{
+        background-color: gray;
+        grid-column: 2/5;
+        grid-row:2/5;
+        max-width: 960px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    body{
+        justify-content: left;
+        margin:0;
+    }
+    #wrapper{
+        display: grid;
+        grid-template-columns: minmax(0px, 1fr) repeat(1fr 2fr 1fr) minmax(0px, 1fr);
+        grid-template-rows: auto;
+    
+    }
+    header{
+        background-color: #4fafec;
+        grid-column: 2/5;
+        grid-row:1/2;
+    }
+    #logo{
+        margin: auto;
+
+    }
+    #headline{
+        grid-column: 2/3;
+        grid-row:1/2;
+
+    }
+    /* h1{ */
+        /* margin: 25%; */
+    /* } */
+    nav#menu{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    nav, #greenbar{
+        position: sticky;
+        top:0;
+        grid-column: 2/5;
+        color: #DEC885;
+        padding: 0px;
+        justify-content: center;
+        text-align: center;
+        background-color: #022b18;
+        font-size: 20px;
+    }
+    nav ul{
+        
+        list-style-type: none;
+        margin-left: 20px;
+        padding:0;
+    }
+    nav ul li a{
+        
+        display: inline-block;
+        color: #DEC885;
+    }
+    nav a:hover {
+        background-color: white;
+        font-size: 45px;
+    }
+    .nav-item{
+        
+        margin: 5px 5px 5px 5px;
+        display: inline-flex;
+        padding: 4px;
+    }
+    img.oldRockSchool{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    div#headline{
+        display:flex;
+        margin-left: 25%;
+        grid-column: 2/5;
+        grid-row:1/2;
+
+    }
+
+    h1#heading{
+        justify-content: center;
+        text-align: center;
+        grid-column: 3/5;
+        grid-row:1/-1; 
+        font-size: 40px;    
+    }
+
+    div.baseline{
+        grid-column: 4/5;
+        grid-row:1/2;
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+    section.facebookLinkedIn{
+        display: flex;
+        width: 40%;
+    }
+
+    aside{
+        border:solid 1pt black;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-color: #DEC885;
+    }
+
+/* MAIN SECTION: index2.html here is the CSS content for the main section of the Index page */
+  
+    #gallery{
+        background-color: darkgray;
+        display: grid;
+        grid-column: 1/6;
+        grid-row: 1/5;
+    }
+    
+    .grid-column1{
+        background-image: url(/chamber/images/whiteRock400.jpg);
+        padding: 50px;
+        border: 1px solid white;
+        grid-column: 2/3;
+        grid-row: 1/4;
+        height: 100%;
+       
+
+    }
+    .grid-column1b{
+        background-color: red;
+        grid-column:2/3;
+        grid-row: 4/5;
+        border: 1px solid white;
+        height:100%;
+        
+    }
+    #grid-column2{
+        background-color: purple;
+        grid-column: 1/2;
+        grid-row: 2/4;
+        height: 100%;
+    }
+    .grid-column2a{
+        background-image: url(/chamber/images/towtruck.jpg);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: 1px solid white;
+        width: 100%;
+        height:100%;
+    }
+    .grid-column2b{
+        grid-column: 1/2;
+        grid-row: 2/4;
+        border: 2px solid white;
+        background-color: orangered;
+        height: 100%;
+    }
+    .grid-column2c{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border: 2px solid white;
+        background-color: pink;
+        margin: 10px;
+        height: 100%;
+    }
+    #grid-column3{
+        display: block;
+        grid-column: 3/4;
+        grid-row: 1/5;
+        height:100%;
+    }
+    
+    .grid-column3a{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        background-color: green;
+        border: solid 1px black;
+        height: 33%;
+    }
+    .grid-column3b{
+        color:red;
+        grid-column: 4/5;
+        grid-row: 2/3;
+        border: solid 1px black;
+        background-image: url(/chamber/images/dadandhisbrothers.jpg);
+        justify-items: center;
+        height: 33%;
+    }
+    .grid-column3c{
+        background-color: yellow;
+        grid-column:4/5;
+        grid-row: 3/5;
+        border: solid 1px black;
+        height: 100%;
+    }
+    #gallery div{
+        border: 1px solid darkgray;
+    }
+
+/*FOOTER SECTION index2.html: here is the footer section of the Index page*/
+    footer#base{
+        grid-row: 5/6;
+        grid-column: 2/6;
+        background-color: #4fafec;
+        
+        
+    }
+    
+    .footer-box{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 960px;
+    }
+    
+
+    .footline{
+        flex-wrap: wrap;
+        font-size: medium;
+        margin-top: 25px;
+    }
+    img.image2Logo{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        margin-left: 100px;
+    }
+    h3#commerceLocation{
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+    h4#contactInfo{
+        grid-column: 4/5;
+        grid-row:5/6;
+        justify-content: space-evenly;
         text-align: center;
     }
-
-
-    .weather {
-        width: 100%;
-        height: 100%;
-        margin-top: -40px;
+    h5.footline{
+        border:solid 1pt black;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-color: #DEC885;
     }
-
-
-    .join {
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
-        margin-top: -20px;
-    }
+    
     .callToAction{
         color: white;
         position: absolute;
@@ -148,91 +1220,6 @@
         padding-left: 0px;
         box-shadow: 0 0 30px #333;
         object-fit: cover;
-    }
-    .middleColumn{
-        padding-left: 30px;
-    }
-
-
-    .hero { 
-        grid-gap: 10px;  
-        color: black;
-        font-size: 35px;
-        align-items: center;
-        width: 100%;
-        margin: 0;
-    }
-    .herodiv{
-        border: 1px white;
-        padding: 20px;
-    }
-
-
-    .oldRock{
-        margin: 20px auto;
-        background-color: #eee;
-        border: 1px solid #333;
-        width: 960px;
-        height: auto;
-        width: auto;
-        height: 250px;
-    }
-    main picture.lgImage{
-        width: 90%;
-        margin: 0 0 0 0%;
-        
-    }
-    
-    main picture.lgImage img{width: 100%;}
-    .oldRock{
-        width: 50%;
-    }
-    .rightColumn{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .spot1 {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .spot2 {
-        width: 70%;
-        height: 100%;
-        object-fit: cover;
-        
-    }
-
-    .spot3 {
-        grid-gap: 10px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    footer{
-        display: flex;
-        background-color: #4fafec;
-        border-radius: 5px 5px 0 0;
-        width: 100%;
-        padding: 1rem;
-    }
-    
-
-    h4 {
-        font-family: IBM Plex Serif italic;
-        justify-items: center;
-        margin-left: 55px;
-    }
-    p{
-        margin: 55px;
-    }
-
-    .contactInfo {
-        justify-content: center;
-        padding: 5px 55px 55px 55px;
     }
 
     .lastModified {

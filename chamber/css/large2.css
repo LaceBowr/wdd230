@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+/* large view */
+/* here is the CSS content for the header section of the Index page */
+
+main{
+    background-color: gray;
+    grid-column: 2/5;
+    grid-row:2/5;
+    max-width: 960px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+body{
+    justify-content: left;
+    margin:0;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(1fr 2fr 1fr) minmax(0px, 1fr);
+    grid-template-rows: auto;
+
+}
+header{
+    background-color: #4fafec;
+    grid-column: 2/5;
+    grid-row:1/2;
+}
+#logo{
+    margin: auto;
+
+}
+#headline{
+    grid-column: 2/3;
+    grid-row:1/2;
+
+}
+/* h1{ */
+    /* margin: 25%; */
+/* } */
+nav#menu{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+nav, #greenbar{
+    position: sticky;
+    top:0;
+    grid-column: 2/5;
+    color: #DEC885;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    background-color: #022b18;
+    font-size: 20px;
+}
+nav ul{
+    
+    list-style-type: none;
+    margin-left: 20px;
+    padding:0;
+}
+nav ul li a{
+    
+    display: inline-block;
+    color: #DEC885;
+}
+nav a:hover {
+    background-color: white;
+    font-size: 45px;
+}
+.nav-item{
+    
+    margin: 5px 5px 5px 5px;
+    display: inline-flex;
+    padding: 4px;
+}
+img.oldRockSchool{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+div#headline{
+    display:flex;
+    margin-left: 25%;
+    grid-column: 2/5;
+    grid-row:1/2;
+
+}
+
+h1#heading{
+    justify-content: center;
+    text-align: center;
+    grid-column: 3/5;
+    grid-row:1/-1; 
+    font-size: 40px;    
+}
+
+div.baseline{
+    grid-column: 4/5;
+    grid-row:1/2;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+section.facebookLinkedIn{
+    display: flex;
+    width: 40%;
+}
+
+aside{
+    border:solid 1pt black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: #DEC885;
+}
+
+/* here is the CSS content for the main section of the Index page */
+
+#gallery{
+    background-color: darkgray;
+    display: grid;
+    grid-column: 1/6;
+    grid-row: 1/5;
+}
+
+.grid-column1{
+    background-image: url(/chamber/images/whiteRock400.jpg);
+    padding: 50px;
+    border: 1px solid white;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 100%;
+   
+
+}
+.grid-column1b{
+    background-color: red;
+    grid-column:2/3;
+    grid-row: 4/5;
+    border: 1px solid white;
+    height:100%;
+    
+}
+#grid-column2{
+    background-color: purple;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    height: 100%;
+}
+.grid-column2a{
+    background-image: url(/chamber/images/towtruck.jpg);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border: 1px solid white;
+    width: 100%;
+    height:100%;
+}
+.grid-column2b{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border: 2px solid white;
+    background-color: orangered;
+    height: 100%;
+}
+.grid-column2c{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: 2px solid white;
+    background-color: pink;
+    margin: 10px;
+    height: 100%;
+}
+#grid-column3{
+    display: block;
+    grid-column: 3/4;
+    grid-row: 1/5;
+    height:100%;
+}
+
+.grid-column3a{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: green;
+    border: solid 1px black;
+    height: 33%;
+}
+.grid-column3b{
+    color:red;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border: solid 1px black;
+    background-image: url(/chamber/images/dadandhisbrothers.jpg);
+    justify-items: center;
+    height: 33%;
+}
+.grid-column3c{
+    background-color: yellow;
+    grid-column:4/5;
+    grid-row: 3/5;
+    border: solid 1px black;
+    height: 100%;
+}
+#gallery div{
+    border: 1px solid darkgray;
+}
+
+/* here is the footer section of the Index page*/
+footer#base{
+    grid-row: 5/6;
+    grid-column: 2/6;
+    background-color: #4fafec;
+    
+    
+}
+
+.footer-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 960px;
+}
+
+
+.footline{
+    flex-wrap: wrap;
+    font-size: medium;
+    margin-top: 25px;
+}
+img.image2Logo{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-left: 100px;
+}
+h3#commerceLocation{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+h4#contactInfo{
+    grid-column: 4/5;
+    grid-row:5/6;
+    justify-content: space-evenly;
+    text-align: center;
+}
+h5.footline{
+    border:solid 1pt black;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: #DEC885;
+}
+
+
+/* medium view */
+@media screen and (max-width: 900px) {
+    main{
+    background-color: gray;
+    grid-column: 2/5;
+    grid-row:2/5;
+    max-width: 960px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+body{
+    justify-content: left;
+    margin:0;
+}
+#wrapper{
+    display: grid;
+    /* grid-template-columns: minmax(4, 1fr) repeat(1fr 1fr) minmax(0px, 1fr); */
+    /* grid-template-areas: */
+    /* "a a b b" */
+    /* "c c c c" */
+    /* "d d e e" */
+    /* "f f f f" */
+    /* "g g g h" */
+    /* "i i i j" */
+
+
+}
+header{
+    background-color: #4fafec;
+    /* grid-area:a; */
+}
+#logo{
+    /* grid-area: a; */
+    margin: auto;
+
+}
+#headline{
+    grid-column: 2/3;
+    grid-row:1/2;
+
+}   
+#base{
+    justify-content: center;
+    text-align: center;
+    grid-row: 4/5;
+    display: flex;
+    background-color: #4fafec;
+}
+.footer-box{
+    display: inline-flex;
+    max-width: 960px;
+}
+
+h5.footline{
+    display: block;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+    
+}
+/* small view */
+@media screen and (max-width: 600px) {
+main{
+    grid-column: 2/5;
+    max-width: 960px;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+body{
+    justify-content: center;
+    text-align: center;
+}
+.headline{
+    /* display:inline-flex; */
+    /* max-width: 960px; */
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#gallery div{
+    width: 200px;
+    height: auto;
+    flex-direction: column;
+
+}
+footer#base{
+    justify-content: center;
+    text-align: center;
+    grid-row: 4/5;
+    background-color: #4fafec;
+}
+.footer-box{
+    max-width: 600px;
+}
+
+h5.footline{
+    display: block;
+    flex-wrap: wrap;
+    font-size: small;
+    margin-top: 25px;
+}
+div.date{
+    display: flex;
+    width: 100%;
+}
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+    margin: 0.5rem;
+    border: 1px solid #2b2b2b;
+    padding: 0.75rem;
+    background-color:#dec885;
+    border-radius: 5px;
+    text-align: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(1fr 2fr 1fr) minmax(0px, 1fr);
+    grid-template-rows: auto;
+
+}
+    
+}
+
+.column1-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column1-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column1-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column1-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column2-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column2-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column2-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column2-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+.column3-three{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.column3-onep1{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column3-twop2{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+
+}
+.column3-threep3{
+    background-color: #dec885;
+    width: 100%;
+    height:100%;
+}
+}

@@ -1,93 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style class="hamburgerBtn">
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        li{
-            list-style: none;
-        }
-        header{
-            background-color: #022b18;} 
-        a{
-            color: #DEC885;
-        }
-        .navbar{
-            min-height: 70px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 24px;
-        }
-        .nav-menu{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 60px;
-        }
-        .nav-branding{
-            font-size: 2rem;
-        }
-        .nav-link{
-            transition: 0.7s ease;
-        }
-        .nav-link:hover{
-            color: gray;
-        }
-        .hamburger{
-            display: none;
-            cursor: pointer;
-        }
-        .bar{
-            display: block;
-            width: 25px;
-            height: 3px;
-            margin: 5px auto;
-            -webkit-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-            background-color:#DEC885;
-        }
-        @media(max-width:768px){
-            .hamburger{
-                display: block;
-            }
-            .hamburger.active .bar:nth-child(2){
-                opacity: 0;
-            }
-            .hamburger.active .bar:nth-child(1){
-                transform: translateY(8px) rotate(45deg);
-            }
-            .hamburger.active .bar:nth-child(1){
-                transform: translateY(-8px) rotate(-45deg);
-            }
-            .nav-menu{
-                position:fixed;
-                left: -100%;
-                top: 70px;
-                gap: 0;
-                flex-direction:column;
-                background-color: #022b18;
-                width: 100%;
-                text-align: center;
-                transition:0.3s;
-
-            }
-            .nav-item{
-                margin: 16px 0;
-            }
-            .nav-menu.active{
-                left: 0;
-            }
-        }
-
-
-
-    </style>
-
+    
 <head>
-    <title>Elsinore Utah Chamber of Commerce</title>
     <meta charset="UTF-8">
     <meta name="viewport" content=" initial-scale=1.0">
     <meta name="description" content="Chamber HOME Page assignment for WDD 230">
@@ -102,110 +16,152 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=DM+Serif+Display&family=IBM+Plex+Serif:ital@1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="/chamber/css/large2.css">
+    <title>Elsinore Commerce HOME page</title>
 </head>
-
 <body>
-    <header>
-            <div class="headerGrid">
-                <section class="logo"><img class="oldRockSchool" src="/chamber/css/faviconColorLogo.webp" width="150"
-                        alt="Elsinore_commerce_Community_Logo">
-                </section>
-                <section class="heading">
-                    <h1><strong> Discover</strong><br> Elsinore's <br> Commerce:</h1>
-                    <!--<p><strong>A Commerce Community for our residing professionals.</strong></p>-->
-                </section>
-                <div class="date">
-                    <aside id="aside">
-                        <date id="datetag">Date: <span id="date">jan 28, 2020</span></date>
-                    </aside>
-                </div>
+    <div id="wrapper">
+        <!-- <div id="greenbar"></div> -->
+   <!--Logo, main Headline, and navigation frame the top of the header here -->
+<header>
+    <!-- <section class="hamburger-icon" id=icon> -->
+    <!-- <div class="menu"></div> -->
+    <!-- <div class="page1"></div> -->
+    <!-- <div class="page2"></div> -->
+    <!-- <div class="page3"></div> -->
+    <!-- <div class="page4"></div> -->
+    <!-- <div class="clear"></div> -->
+    <!-- </section> -->
+    <section class="nav">
+        <nav id="menu">
+            <a class="nav-branding" href="#"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="directory.html" class="nav-link"><strong>Directory</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="join.html" class="nav-link"><strong>Join</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="discover.html" class="nav-link"><strong>Discover</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><strong>Contact US</strong></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="social">
-                <a href="https://facebook.com">
-                    <svg enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="100%"
-                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g>
-                            <path
-                                d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
-                                fill="#3B5998" />
-                            <path
-                                d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"
-                                fill="#FFFFFF" id="f" />
-                        </g>
-                    </svg>
-                </a>
-                <a href="https://linkedin.com">
-                    <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
-                        version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="g5891">
-                            <path
-                                d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
-                                id="background" style="fill:#2867b2;" />
-                            <g id="shapes">
-                                <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053"
-                                    y="178.667" />
-                                <path
-                                    d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
-                                    id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
-                                <path
-                                    d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                                    id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <!-- <section class="hamburger-icon" id=icon> -->
-            <!-- <div class="menu"></div> -->
-            <!-- <div class="page1"></div> -->
-            <!-- <div class="page2"></div> -->
-            <!-- <div class="page3"></div> -->
-            <!-- <div class="page4"></div> -->
-            <!-- <div class="clear"></div> -->
-            <!-- </section> -->
-            <section class="column3A">
-                <nav id="navbar">
-                    <a class="nav-branding" href="#"></a>
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link"><strong>Home</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="directory.html" class="nav-link"><strong>Directory</strong></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="join.html" class="nav-link"><strong>join</strong></a>
-                        </li>
-                        <li>
-                            <a href="css/dummydiscover.html" class="nav-link"><strong>Discover</strong></a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link"><strong>Contact US</strong></a>
-                        </li>
-                    </ul>
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </nav>
-            </section>
-            </div>
-    </header>
-    <main>
-        <article>
-            <div class="leftColumn">
-                <section class="mightyMouse">
+        </nav>
+    </section>
+<div id="headline">
+    <div id="logo"><img class="oldRockSchool" src="/chamber/css/faviconColorLogo.webp" width="150"
+        alt="Elsinore_commerce_Community_Logo">
+    </div>
+    <h1 id="heading">Elsinore Chamber of<br> Commerce Home Page:
+    </h1>
+    
+<!-- baseline of header starts here with social media and date -->
+    <div class="baseline">
+    <section class="facebookLinkedIn">
+        <a href="https://facebook.com">
+            <svg enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="100%"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                    <path
+                        d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                        fill="#3B5998" />
+                    <path
+                        d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z"
+                        fill="#FFFFFF" id="f" />
+                </g>
+            </svg>
+        </a>
+        <a href="https://linkedin.com">
+            <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="g5891">
+                    <path
+                        d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
+                        id="background" style="fill:#2867b2;" />
+                    <g id="shapes">
+                        <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053"
+                            y="178.667" />
+                        <path
+                            d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                            id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
+                        <path
+                            d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                            id="path15" style="fill:#fff;fill-rule:nonzero;" />
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </section>
+    </div>
+</div>    
+<!-- Datetag starts here -->
+    <aside id="aside">
+        <!-- <date id="datetag">-->Date: <span id="date"></span></date> 
+    </aside>
+</header>
+<!-- main section starts here with the grid -->
+
+<main>
+    <div id="gallery">
+    
+            <div class="grid-column1">    
+                <a href=""><img height="150" alt="Elsinores White Rock School House built 1889"></a>
+                <article class="middleColumn">
+                        <section class="hero">
+                            
+                                <h2>
+                                    
+                                        Welcome to...<br>
+                                        "Little Denmark"!
+                                    
+                            
+                        </h2>
+
+                    </section>
+            </div> 
+            <div class="grid-column1b">
+                <section class="news">
                     <h2>
+                        <strong>
+                            News Release:
+                        </strong>
+                    </h2>
+                        <p>
+                            <larger>
+                                "As the Elsinore Chamber of Commerce, we recognize every small community progresses to a
+                                point in
+                                growth where the demand for more local resources being accessable is the priority. This
+                                can mean a closer
+                                grocery store, closer hardware retail, plumbers, or closer health care. Elsinore wants
+                                to create a Chamber
+                                community full of diverse, reliable, and unified businesses. Are you someone who could expand our community by providing a local trade or business to
+                                those
+                                around you? Will you be the next addition to the Elsinore Chamber?
+                            </larger>
+                        </p>
+                </section>
+            </div>
+        
+       
+            <div class="grid-colum2a">
+                <section class="mightyMouse">
+                    
                         <center>
-                            Ribbon Cutting
+                            <h2>Ribbon Cutting</h2>
                             <picture class="smallWideImage">
                                 <!-- <source srcset="images\towtruck.gif" media="(min-width: 150px) and (max-width: 299px)"> -->
                                 <!-- <source srcset="images\towtruck300.gif" media="(min-width: 300px)"> -->
@@ -228,146 +184,106 @@
                             </small>
                         </p>
                         <a id="towtruck" href="chamber\index.html">more information...</a>
-                    </h2>
+                    
                 </section>
+            </div>
+            <div class="grid-column2b">
+                
                 <section class="join">
                     <h2>
                         <center>
                             Join US!
                         </center>
-
+                    </h2>
                         <p>
                             <center>
                                 Discover how to Join the chamber of commerce and how it will benefit yourorgainization!
-                            </center>
-                    </h2>
-                    <div class="callToAction">
+                            </center>    
+                        </p>
+                    <button class="join Commerce Community">
                         <center>
-                            Join the Chamber:
+                            <div class="callToAction">
+                                Join the Chamber:
+                            </div> 
                         </center>
-                    </div>
-                    </p>
+                    </button>
                 </section>
+            </div>
+            <div class="grid-column2c">
                 <section class="weather">
                     <h2>
                         <center>
                             Weather
                         </center>
-
-
+                    </h2>
                         <!-- <label id="city"><p> What is your City (ie:Ancorage) </p></label> -->
                         <!-- <input type="text" id="cityStateCountry"> -->
                         <!-- <button id="moveCurrentDateAndDay">GENERATE</button> -->
                         <img id="weatherIcon">
                         <span id="iconDesc"></span>
                         <p>Temp:
-                            <span id="temp"></span> &#176;F
+                            <span id="temperature"></span> &#176;F
                         </p>
                         <p>Wind Speed:
-                            <span id="windspeed"></span> mph
+                            <span id="windSpeed"></span> mph
                         </p>
                         <p>Wind Chill:
-                            <span id="windchill"></span> &#176;F
+                            <span id="windChill"></span> &#176;F
                         </p>
-                    </h2>
                 </section>
             </div>
-        </article>
-        <article class="middleColumn">
-            <div class="herodiv">
-                <section class="hero">
-                    <strong>
-                        <h2>
-                            <center>
-                                Welcome to...<br>
-                                "Little Denmark"!
-                            </center>
-                    </strong>
-                    <picture class="lgImage">
-                        <source srcset="/chamber/images/whiteRock400.jpg"
-                            media="(min-width: 400px) and (max-width: 599px)">
-                        <source srcset="/chamber/images/whiteRock600.jpg" media="(min-width: 600px)">
-                        <img id="oldRock" src="/chamber/images/whiteRock200.jpg" alt="wdd People Talking Image">
-                    </picture>
-                    </h2>
+        
 
-                </section>
-                <section class="news">
-                    <h2>
-                        <strong>
-                            News Release:
-                        </strong>
-                        <p>
-                            <larger>
-                                "As the Elsinore Chamber of Commerce, we recognize every small community progresses to a
-                                point in
-                                growth where the demand for more local resources being accessable is the priority. This
-                                can mean a closer
-                                grocery store, closer hardware retail, plumbers, or closer health care. Elsinore wants
-                                to create a Chamber
-                                community full of diverse, reliable, and unified businesses as are needed. Our commerce
-                                community can be a
-                                great resourse to all that visit, live, and work here.
-                                Are you someone who could expand our community by providing a local trade or business to
-                                those
-                                around you? Will you be the next addition to the Elsinore Chamber?
-                            </larger>
-                        </p>
-                    </h2>
-            </div>
-            </section>
-            </div>
-        </article>
-
-        <article class="rightColumn">
-            <div class="spotlights">
+            <div id="grid-column3">
+                <article>
+            <div class="grid-column3a">
                 <section class="spot1">
                     <h2>
                         Silver Eagle:
+                    </h2>
 
-                        <p>
+                        <h3>
                             February Fill Frenzy: <br>
-                            <small>
-                                burgers on us when you fill your tank.
-                            </small>
+                            Have a
+                                burger on us when you fill your tank.
                             <picture class="medImage">
                                 <center>
-                                    <img src="images\gas.png" width="70" alt="gas spicket">
+                                    <img src="images\gas.png" width="120" alt="gas spicket">
                                 </center>
                             </picture>
                             <extra-small>
-                                250 s US Hwy 89: Open 7am-12am<br>
+                                250 s US Hwy 89<br> Open 7am-12am<br>
                                 435-527-4644
                             </extra-small>
-                    </h2>
+                        </h3>
+                    
                 </section>
+            
+            <div class="grid-column3b">
                 <section class="spot2">
                     <h2>
                         <center>
-                            Sevier Heating &<br>
+                            Sevier Heating <br>&<br>
                             Air Conditioning:
                         </center>
-                        <p>Celebrates 50 years as local professionals.
-                                <picture class="medWideImage">
-                                    <!-- <source srcset="images/dadandhisbrothers200.jpg" media="(min-width: 200px) and (max-width: 249px)"> -->
-                                    <!-- <source srcset="images/dadandhisbrothers.jpg" media="(min-width: 250px)"> -->
-                                    <img src="images/dadandhisbrothers150.jpg" width="100"
-                                        alt="Scot, Raymond, Robert, and Eldred Jensen: Sevier Heating's business owners.">
-                                </picture><br>
+                    </h2>
+                        <h3>Celebrates 50 years as local professionals.<br>
                                 CONGRATULATIONS!<br>
                                 <small>
                                     <center>
-                                        435-527-4127
+                                        435-527-4127<br>
                                     </center>
                                 </small>
-                        </p>
-                    </h2>
+                            </h3>
                 </section>
+            </div>
+            
+            <div class="grid-column3c">
                 <section class="spot3">
-                    <h2>Recreation:
+                    <h2>Recreation:<br>
                         <picture class="mediumImage">
                             <center>
-                                <source srcset="images\aylLogo.png" height="60">
+                                <source srcset="images\aylLogo.png" height="80">
                                 <!-- media="(min-width: 76px) and (max-width: 300px)" -->
                                 <img src="images\aylLogo75.png"
                                     alt="videos to view the ATV experience in Sevier County"></center>
@@ -375,51 +291,55 @@
                         <small>
                             <center>
                                 <p>
-                                    Check us OUT!
+                                    Check us OUT!<br>
                                     <a href="https://ayltv.com/home">ayltv.com/home</a>
                                 </p>
                             </center>
                         </small>
                     </h2>
-                </section>
-            </div>
-        </article>
-    </main>
-    <footer class="baseFooter">
-        <div id="log02">
-            <img width="30%" class="image2Logo" src="/chamber/images/faviconColorLogo.webp"
-                alt="Elsinore_commerce_Community_Logo">
-        </div>
-        <div class="footerInfo"><br><br>
-            <h3>Elsinore Chamber of Commerce</h3>
-
-            <h5>35 W Main Street <br>
-                Elsinore, Utah 84724</h5>
-            </p>
+                </div>
+            </section>
+            
         </div>
 
-        <div class="contactInfo">
-            <p><strong>elsinoretown@cut.net</strong>
+</main>
 
-                <a
-                    href="https://www.google.com/maps/dir/40.239104,-111.6995584/Elsinore+Town+Office,+35+W+Main+St,+Elsinore,+UT+84724/@38.6867721,-112.1552559,16.04z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x874b16d255555555:0x86b95301e994d4c1!2m2!1d-112.1494502!2d38.6828291!3e0"><strong>Location
-                        Map</strong><br></a>
-                <Strong>(435) 527-3306</Strong></p>
+<!--footer begins here  -->
+<footer id="base">
+    <div class="footer-box">
+        <div id="logo">
+            <img class="image2Logo" width="50" src="/chamber/images/faviconColorLogo.webp"
+            alt="Elsinore_commerce_Community_Logo">
         </div>
-        <strong><br><br><br>
-            <center>
-                &copy;
-                Elsinore
-                Chamber.:|:.Laycie J. Bowers.:|:.
-                WDD 230 Project <br> <span class="label">Number of Visits: <span class="visits" id="visits"></span>
-                </span>
-            </center>
-        </strong> <br><br>
-        <!-- <section class="lastMod"> Last Modification:</section> -->
-    </footer>
+        <div id="commerceLocation">
+        <h3>
+            Elsinore Chamber of Commerce<br>
+            35 W Main Street Elsinore, Utah 84724
+        </h3>
+        </div>
+        <div id="contactInfo">
+        <h4>elsinoretown@cut.net<br>
+            Contact US:<br><a href="https://www.google.com/maps/dir/40.239104,-111.6995584/Elsinore+Town+Office,+35+W+Main+St,+Elsinore,+UT+84724/@38.6867721,-112.1552559,16.04z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x874b16d255555555:0x86b95301e994d4c1!2m2!1d-112.1494502!2d38.6828291!3e0">Location Map</a>
+        
+        <br>(435) 527-3306</h4>
+        </div>
+    </div>
+    <div class="footline">
+    <h5 class="footline">
+        <center>
+            &copy;Elsinore Chamber.:|:.<strong>Laycie J. Bowers</strong>.:|:.WDD 230 Project
+            <span class="label">
+            <center>Number of Visits:</center> 
+            <span class="visits" id="visits">
+            </span>
+            </span>
+        </center>
+    </h5>
+</div>
+</footer>
+    </div>
 </body>
-<script src="js/index.js"></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js> </script> <!--<script type="module"
-    src="js/windchill.js"></script>-->
-
+<script src="/chamber/js/index.js"></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js> </script> 
+<script type="module" src="/chamber/js/windchill.js"></script>
 </html>
