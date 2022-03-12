@@ -12,30 +12,6 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 }).format(now);
 // long, medium, short options ... try them
 
-let pagename = document.location.href.split('?')[0];
-if(pagename.endsWith('thankyou.html'))
-{
-    datefield.setAttribute('hidden', 'true');
-}
-datefield.innerHTML = `<em>${fulldate}</em>`;
-//datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
-const hambutton = document.querySelector(".menu");
-const mainnav = document.querySelector(".ham");
-hambutton.addEventListener("click", () =>
-{mainnav.classList.toggle("responsive")}, false);
-
-//to solve the mid resizing issue with responsive class on 
-window.onresize = () => { (window.innerWidth >760)
-mainnav.classList.remove("responsive")};
-
-//get all imgs with data-src attribute
-const images = document.querySelectorAll("[data-src]");
-
-//optional parameters being set for the IntersectionalObserver
-const imgOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 0px 0px"
-};
 
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
@@ -49,6 +25,12 @@ function preloadImage(img) {
 //    image.onload = () => {image.removeAttribute("data-src");};
 //};
 
+//optional parameters being set for the IntersectionalObserver
+const imgOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 0px 0px"
+};
+
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 //first check to see if Intersenction Observer is supported
 entries.forEach(entry => {
@@ -61,6 +43,8 @@ entries.forEach(entry => {
     });
 }, imgOptions);
 
+//get all imgs with data-src attribute
+const images = document.querySelectorAll("[data-src]");
 
 images.forEach(image => {
     imgObserver.observe(image);
@@ -96,15 +80,15 @@ function fillData(){
     let speed = data["wind"]["speed"];
 
     let currentTemp = Math.round(newTemp);
-    let localtemp = document.querySelector("#temp");
+    let localtemp = document.querySelector("#temperature");
     localtemp.textContent = `${currentTemp}`;
 
     let currentspeed = Math.round(speed);
-    let wSpeed = document.querySelector("#windspeed");
+    let wSpeed = document.querySelector("#windSpeed");
     wSpeed.textContent = `${currentspeed}`;
 
     let windChill = calulateWindChill(currentspeed, currentTemp);
-    let wChill = document.querySelector("#windchill");
+    let wChill = document.querySelector("#windChill");
     wChill.textContent = windChill;
 
     return newTemp, speed;
@@ -143,3 +127,20 @@ document.querySelectorAll(".nav-link").forEach(n => n.
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     }))
+    let pagename = document.location.href.split('?')[0];
+if(pagename.endsWith('thankyou.html'))
+{
+    datefield.setAttribute('hidden', 'true');
+}
+datefield.innerHTML = `<em>${fulldate}</em>`;
+//datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+const hambutton = document.querySelector(".menu");
+const mainnav = document.querySelector(".ham");
+
+//hambutton.addEventListener("click", () =>
+//{mainnav.classList.toggle("responsive")}, false);
+
+//to solve the mid resizing issue with responsive class on 
+window.onresize = () => { (window.innerWidth >760)
+mainnav.classList.remove("responsive")};
+
