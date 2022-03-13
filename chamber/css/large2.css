@@ -129,7 +129,7 @@ aside{
 }
 
 .grid-column1{
-    background-image: url(/chamber/images/whiteRock400.jpg);
+    background-image: url(../images/whiteRock400.jpg);
     padding: 50px;
     border: 1px solid white;
     grid-column: 2/3;
