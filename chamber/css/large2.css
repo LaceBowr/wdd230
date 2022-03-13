@@ -153,7 +153,7 @@ aside{
     height: 100%;
 }
 .grid-column2a{
-    background-image: url(/chamber/images/towtruck.jpg);
+    background-image: url(../images/towtruck.jpg);
     grid-column: 1/2;
     grid-row: 2/3;
     border: 1px solid white;
@@ -194,7 +194,7 @@ aside{
     grid-column: 4/5;
     grid-row: 2/3;
     border: solid 1px black;
-    background-image: url(/chamber/images/dadandhisbrothers.jpg);
+    background-image: url(../images/dadandhisbrothers.jpg);
     justify-items: center;
     height: 33%;
 }
