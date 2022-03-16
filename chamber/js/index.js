@@ -1,17 +1,12 @@
 const datefield = document.querySelector("#date");
-const datefieldUK = document.querySelector("#aside"); // for european/family history format with day first.
-
 
 // derive the current date using a date object
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-// long, medium, short options ... try them
 
+// long, medium, short options ... try them
 
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
@@ -110,22 +105,28 @@ function calulateWindChill(speed, temp) {
         return `N/A`;
     }
 }
-getWeather().then(fillData).then(getIconInfo);
+if (document.querySelector("#temperature"))
+{
+    getWeather().then(fillData).then(getIconInfo);
+}
 
 // the Hamburger Icon on the medium and small screens js is as follows
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector("#hamBtn");
+const navMenu = document.querySelector("#menu");
 
-hamburger.addEventListener("click", ()=> {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+if(hamburger)
+{
+    hamburger.addEventListener("click", ()=> {
+        document.getElementById("menu").classList.toggle("open");
+        document.getElementsById("hamBtn").classList.toggle("open");
 
-})
+    })
+}
 
 document.querySelectorAll(".nav-link").forEach(n => n.
     addEventListener("click", ()=> {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    hamBtn.classList.remove("active");
+    menu.classList.remove("active");
     }))
     let pagename = document.location.href.split('?')[0];
 if(pagename.endsWith('thankyou.html'))
@@ -141,6 +142,6 @@ const mainnav = document.querySelector(".ham");
 //{mainnav.classList.toggle("responsive")}, false);
 
 //to solve the mid resizing issue with responsive class on 
-window.onresize = () => { (window.innerWidth >760)
-mainnav.classList.remove("responsive")};
+//window.onresize = () => { (window.innerWidth >760)
+//mainnav.classList.remove("responsive")};
 

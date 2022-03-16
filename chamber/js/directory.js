@@ -1,3 +1,14 @@
+
+const datefield = document.querySelector("#date");
+
+// derive the current date using a date object
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
+	now
+);
+
+datefield.innerHTML = `<em>${fulldate}</em>`;
+
 // this is the js for the loading of cards in the Directory page
 let cards = document.querySelector("#cardsection");
 let cardstable = document.querySelector("#cardtable");

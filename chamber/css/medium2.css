@@ -1,0 +1,217 @@
+*{padding: 0;
+display: block;
+
+}
+#cardsection{
+    display:flex;
+    
+}
+/* medium view chamber Index.html/home page*/
+
+@media screen and (max-width: 900px) {
+    main{
+        background-color: white;
+        grid-column: 2/5;
+        grid-row:2/5;
+        max-width: 960px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    body{
+        background-color: darkgray;
+        justify-content: left;
+        margin:0;
+    }
+    #wrapper{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) repeat(1fr 1fr) minmax(0px, 1fr);
+        grid-template-rows: 8fr;
+    }
+    header{
+        background-color: #4fafec;
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+    #logo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto;
+        height: auto;
+        width: 100px;
+        margin-top:-10px;
+    
+    }
+    #heading{
+        margin-left: 60px;
+        font-size: xx-large;
+    }
+    #headline{
+        margin-left: 50px;
+        margin-right: -25px;
+        margin-top: 30px;
+        padding: 25px;
+        font-size: medium;
+        grid-column: 3/4;
+        grid-row:1/2;
+    }
+    nav{
+        display: none;
+        margin-bottom:0;
+        grid-column: 2/5;
+        color: #DEC885;
+        padding: 0px;
+        justify-content: center;
+        text-align: end;
+        background-color: #022b18;
+        font-size: 20px;
+    }
+    #button{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }   
+    section.facebookLinkedIn{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        width: 25%;
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+    #hamburger{
+        display: block;
+        grid-column: 3/5;
+        grid-row: 1/2;
+        border: none;
+        background-color: #022b18 ;
+        color:#DEC885;
+        border-radius: 5px;
+        width: 60px;
+        height: 60px;
+    }
+    aside{
+        border:solid 1pt black;
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-color: #DEC885;
+    }
+    #date{
+        justify-content: center;
+        text-align: center;
+        color: black;
+    }
+    div#gallery{
+        display: grid;
+    }
+    .grid-column1{
+        background-color: aqua;
+        grid-column:2/4;
+        grid-row: -1/4;
+        
+    }
+    .grid-column1b{
+        background-color: rgb(182, 25, 148);
+        grid-column: 2/4;
+        grid-row: 4/5;
+        
+    }
+    .grid-column3{
+        grid-column: 2/4;
+        grid-row: 5/6;
+        background-color: orangered;
+    }
+    .grid-column3b{
+        background-color: orange;
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .grid-column3c{
+        background-color: orange;
+       grid-column: 3/4;
+       grid-row: 5/6;
+    }
+    .grid-column3a{
+        display: none;
+    }
+    .grid-column2b{
+        background-color: yellow;
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    #towtruck{
+        width:50%;
+        height: auto;
+        background-color: yellowgreen;
+    }
+    div.grid-column2a{
+        background-color:yellowgreen ;
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    section.mightyMouse{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    #weatherIcon{
+        justify-content: center;
+        text-align: center;
+        width: 30%;
+        height: auto;
+    }
+    .grid-column2c{
+        background-color: blue;
+        grid-column: 3/4;
+        grid-row: 6/7;
+        margin-top: 0;
+        justify-items: center;
+        text-align: center;
+        width: 75%;
+        margin-left: 25%;
+    }
+    img.image2Logo{
+        width: 50px;
+        height: auto;
+        margin-left: -20px;
+    }
+    #base{
+        background-color: #4fafec;
+    }
+    .footer-box{
+        display: inline-flex;
+        max-width: 960px;
+    }
+    div.footline{
+        display: block;
+    }
+    h5.footline{
+        border:solid 1pt black;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-color: #DEC885;
+        width: 100%;
+    }
+    /*DIRECTORY page CSS */
+    #discoverMain{
+        background-color: gray;
+        grid-column: 2/4;
+        grid-row:2/5;
+        max-width: 960px;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    button#grid{
+        width: 45px;
+        height: 45px;
+    }
+    button#list{
+        width: 45px;
+        height: 45px;
+    }
+}
