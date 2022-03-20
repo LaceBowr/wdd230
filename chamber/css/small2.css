@@ -1,63 +1,254 @@
+
 @media screen and (max-width: 600px) {
+    *{  padding: 0;
+        margin: 0;
+        max-width: 600px;
+        box-sizing: border;
+        }
+    .cardtable{
+        margin: 0;
+        border: none;
+        box-shadow: none;
+
+    }
+    #cardsection{
+        justify-content: center;
+        text-align: center;
+        display: block;
+    }
+    div#gallery{
+        display:grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 12fr;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
     nav{
         display: none;
     }
     main{
-        grid-column: 2/5;
-        max-width: 960px;
+        background-color: white;
         justify-content: center;
         text-align: center;
-        margin: 0;
     }
-    #heading{
-        font-size: x-large;
-    }
-    header{
-        background-color: #4fafec;
-        
+    body{
+        display: grid;
+        grid-template-columns: 2/3;
+        grid-template-rows:2/10;
     }
     div.date{
-        display: flex;
         width: 100%;
     }
+    div#gallery{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     aside {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-        height: 40%;
+        margin: 0;
         border: 1px solid #2b2b2b;
-        padding: 0.75rem;
         background-color:#dec885;
         border-radius: 5px;
         text-align: center;
     }
-    body{
-        justify-content: center;
-        text-align: center;
+    header{
+        background-color: #4fafec;
+        grid-column: 1/-1;
+        grid-row: 1/2;
     }
-    .headline{
-        /* display:inline-flex; */
-        /* max-width: 960px; */
-        justify-content: center;
-        text-align: center;
-        
+    
+    section.grid{
+        grid-column: 2/3;
+    }
+    img.oldRockSchool{
+        width: 100px;
+        height: auto;
+    }
+    #logo, #logoDirectory, #logoJoin, #logoDiscovery{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0 80px;
+        height: auto;
+        width: 1px;
+        margin-top:-10px;
+    }
+    h1#heading, #heading, #heading2,  #heading4{
+        font-size: medium;
+    }
+    #headline, #headline2, #headline3, #headline4{
+        margin: 0px;
+        padding: 20px
+    }
+    .headline{   
+        margin: 0 50px;
+    }
+    h1#heading2{
+        font-size: 30px;
+        margin-left: 70px;
     }
     section.facebookLinkedIn{
         display: flex;
-        justify-items: center;
-        align-items: center;
         flex-direction: column;
         position: relative;
-        width: 40%;
-        margin-bottom: 40px;
+        width: 44px;
+        margin-top: -60px;
+        margin-bottom: 20px;
         margin-left: 20px;
     }
+    button{
+        justify-content: center;
+        text-align: center;
+    }
+    button#hamburger{
+        margin: 0;
+        width: 44px;
+        height: 44px;
+        
+    }
+    button#list{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    } 
+    button#grid{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    } 
+    #hamburgerDirectory{
+        justify-content: end;
+        display: block;
+        grid-row: 1/2;
+        border: none;
+        background-color: #022b18 ;
+        color:#DEC885;
+        border-radius: 5px;
+        margin-top: -15px;
+        width: 44px;
+        height: 44px;
+    }
+    div.baseline{
+        margin-right: -50px;
+    }
+    #wrapper,
+    #gallery{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 12fr;
+    }
+    main.home{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    h2.heroWords{
+        display: flex;
+        color: black bold;
+        font-size: 30px;
+        margin-top: -170px;
+        margin-left: 100px;
+        top: 0;
+    }
+    div.grid-column1{
+        padding: 0;
+        height: 90%;
+        grid-column: 1/2;
+        grid-column: 2/3;
+        background-image: url(../images/whiteRock400.jpg)
+    }
+    #towtruck{
+        margin: 0 50% 0 20%;
+        width: 35%;
+        height: 50%;
+        
+        background-color: yellowgreen;
+    }
+    div section.mightyMouse{
+        justify-content: center;
+        align-items: center;
+        grid-row: 3/4;
+        width: 100%;
+        height: 100%;
+        grid-column: 4/5;
+    }
+    #weatherIcon{
+        display: inline-flex;
+        justify-content: center;
+        width: 20%;
+        height: auto;
+    }
+    div.grid-column2c{
+        grid-column: 1/4;
+        grid-row: 5/6;
+        margin: auto;   
+    }
+    .grid-column1b{
+        grid-column: 2/3;
+        grid-row: 6/7; 
+        margin: 0;
+    }
+    
+    div.grid-column2b{
+        display: none;   
+    }
+    img#ayl{
+        width: 100%;
+        height: auto;
+    }
+
+    
+    #column3{
+        display: grid;
+    }
+    div section.column3a{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        height: 100%;
+        margin: 0 50% 0 50% 0;
+        background-color: darkgray;
+        
+    }
+    div section.column3b{
+        margin-bottom: 65px;
+        width: 100%;
+        height: 100%;
+        }
+    
+    .column3c{
+        display: none;
+        
+    }
+    
+     img.image2Logo{
+        width: 50px;
+        height: auto;
+        margin: auto;
+    } 
+    #base{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        background-color: #4fafec;
+    }
+    .footer-box{
+        display: flex;
+        max-width: 600px;
+    }
+    div.footline{
+        display: block;
+    }
+    h5.footline{
+        border:solid 1pt black;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        background-color: #DEC885;
+        width: 100%;
+    }
+
+    /* DIRECTORY page */
     .row::after {
         content: "";
         clear: both;
         display: table;
     }
+    
     div.cardsection{
         display: grid;
         border-radius: 1px 1px;
@@ -112,12 +303,15 @@
         margin: 0;
         background-color: #DEC885;
     }
-/* Discover Elsinore Page */
+/* DISCOVER Elsinore Page */
+h1#heading3{
+    font-size: 20px;
+}
     .grids{
         display: grid;
-        grid-template-columns: minmax(0px, 1fr) repeat(1fr) minmax(0px, 1fr);
-        grid-template-rows: auto;
-    
+        grid-template-columns: minmax(0px, 1fr) 1fr minmax(0px, 1fr);
+        grid-template-rows: 12fr;
+
     } 
     .column1-one{
         display: grid;

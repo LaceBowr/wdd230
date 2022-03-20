@@ -20,16 +20,17 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="/chamber/css/large2.css">
     <link rel="stylesheet" href="/chamber/css/medium2.css">
+    <link rel="stylesheet" href="/chamber/css/small2.css">
     <script type="module" defer src="js/directory.js"></script>
 
-<body>
+<body id="bodyDirectory">
     <title> Elsinore DIRECTORY Page</title>
 
 </head>
-<div id="wrapper">
+<div id="wrapper2">
   <!-- <div id="greenbar"></div> -->
 <!--Logo, main Headline, and navigation frame the top of the header here -->
-<header>
+<header id="headerDirectory">
 <!-- <section class="hamburger-icon" id=icon> -->
 <!-- <div class="menu"></div> -->
 <!-- <div class="page1"></div> -->
@@ -38,10 +39,10 @@
 <!-- <div class="page4"></div> -->
 <!-- <div class="clear"></div> -->
 <!-- </section> -->
-<section class="nav">
-  <nav id="menu">
+<div class="nav2">
+  <nav id="menu2">
       <a class="nav-branding" href="#"></a>
-      <ul class="nav-menu">
+      <ul class="nav-menu2">
           <li class="nav-item">
               <a href="index.html" class="nav-link"><strong>Home</strong></a>
           </li>
@@ -58,23 +59,20 @@
               <a href="#" class="nav-link"><strong>Contact US</strong></a>
           </li>
       </ul>
-      <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
+      
   </nav>
-</section>
-<div id="headline">
+</div>
+<div id="headline2">
 
-<div id="logo"><img class="oldRockSchool" src="/chamber/css/faviconColorLogo.webp" width="150"
+<div id="logoDirectory"><img class="oldRockSchoolDirectory" src="/chamber/css/faviconColorLogo.webp" width="150"
   alt="Elsinore_commerce_Community_Logo">
 </div>
-<h1 id="heading">Elsinore Chamber<br> Directory:
+<h1 id="heading2">Elsinore Chamber<br> Directory:
 </h1>
 
 <!-- baseline of header starts here with social media and date-->
 <div class="baseline">
+    
     <section class="facebookLinkedIn">
       <a href="https://facebook.com"> 
           <svg enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="100%"
@@ -110,11 +108,17 @@
                           id="path15" style="fill:#fff;fill-rule:nonzero;" />
                   </g>
               </g>
-          </svg>
-      </a>
-    </section>
+            </svg>
+        </a>
+            <div id="buttonDirectory">
+                <button id="hamburgerDirectory">
+                    <span class="bar">nav</span>
+                    <span class="bar"></span>
+                    <span class="bar"><br>menu</span>
+                </button>
+            </div>
+        </section>
     </div>
-
 </div>    
 
 <!-- Datetag starts here -->
@@ -122,27 +126,27 @@
   <!-- <date id="datetag">-->Date: <span id="date"></span></date> 
 </aside>
 </header>
-    <main id="discoverMain">
-     
+    <main id="directoryMain" class="gallery">
+     <h2 class="introParagraph"><strong>Business Directory:</strong></h2> 
       <button id="grid">Grid<br>view</button>
       <button id="list">List<br>view</button><br>
-       
+      
       
         <div class="row">
-          <h1 class="introParagraph">Business Directory:</h1>
             <div class="cardsection" id="cardsection">
             </div>
         </div>
+    
         <div>
           <div class="cardtable">
             <table class="cardtable" id = "cardtable">
-
             </table>
           </div>
-      </div>
+        </div>
+    
     </main>
-    <footer id="base">
-      <div class="footer-box">
+    <footer id="base2">
+      <div class="footer-box2">
           <div id="logo">
               <img class="image2Logo" width="50" src="/chamber/images/faviconColorLogo.webp"
               alt="Elsinore_commerce_Community_Logo">
@@ -156,20 +160,18 @@
           <div id="contactInfo">
           <h4>elsinoretown@cut.net<br>
               Contact US:<br><a href="https://www.google.com/maps/dir/40.239104,-111.6995584/Elsinore+Town+Office,+35+W+Main+St,+Elsinore,+UT+84724/@38.6867721,-112.1552559,16.04z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x874b16d255555555:0x86b95301e994d4c1!2m2!1d-112.1494502!2d38.6828291!3e0">Location Map</a>
-          
           <br>(435) 527-3306</h4>
           </div>
       </div>
-      <div class="footline">
-      <h5 class="footline">
-          <center>
+      <div class="footline2">
+      <h5 class="footline2">
               &copy;Elsinore Chamber.:|:.<strong>Laycie J. Bowers</strong>.:|:.WDD 230 Project
               <span class="label">
-              <center>Number of Visits:</center> 
+              Number of Visits: 
               <span class="visits" id="visits">
               </span>
               </span>
-          </center>
+          
       </h5>
   </div>
   </footer>   
