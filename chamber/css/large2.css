@@ -149,7 +149,7 @@ div#gallery{
     grid-column: 1/3;
     grid-row: 1/5;
 }
-.grid-column1{
+div.grid-column1{
     font-size: 30px;
     background-image: url(../images/whiterock400.jpg);
     grid-column: 2/3;
