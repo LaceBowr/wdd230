@@ -143,7 +143,7 @@
         padding: 0 100px 200px;
         grid-column: 2/6;
         grid-row: 1/2;
-        min-width: 80%;
+        min-width: 90%;
         min-height: 90%;
         background-image: url(../templeImages/panoTemple.jpg) /*alt="wedding couple in front of LDS temple"*/;
         border: solid 3px #818783;
@@ -167,7 +167,7 @@
         grid-column: 2/6;  
         grid-row: 4/5;    
         padding: 8px;
-        min-width: 100%;
+        max-width: 90%;
         min-height: 15%;
         color:#283959;
         background-color: #ffffe3;
