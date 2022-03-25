@@ -45,8 +45,9 @@
     }
     aside {
         margin: 0;
+        padding: 10px;
         border: 1px solid #2b2b2b;
-        background-color:#dec885;
+        background-color:#bfa68f;
         border-radius: 5px;
         text-align: center;
     }
