@@ -10,27 +10,25 @@
         href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAhcjeAP///wADAwMAFykCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzMAAAAAAANEQwAAAAAAM0RDMAAAAAM0REQzAAAAM0EREUMwAAAyIRERIjAAADIhIiIiMAAAMiERESIwAAAyISIiIjAAADIhEREiMAAANEEREUQwAAA0RERERDAAADREREREMAAAMiIiIiIwAAAyMyIjMjAAADMzMzMzMAD4PwAA+D8AAPAfAADgDwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAAwAcAAMAHAADABwAA"
         rel="icon" type="image/x-icon" /> -->
     <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-    <link rel="preconnect" href="/finalProjectTemple/Oswald,Roboto_Condensed/Oswald/OFL.txt">
-    <link rel="preconnect" href="/finalProjectTemple/Roboto_Condensed/LICENSE.txt">
-    <link rel="stylesheet" href="/finalProjectTemple/css-temple/smallTemple.css">
-    <link rel="stylesheet" href="/finalProjectTemple/css-temple/mediumTemple.css">
-    <link rel="stylesheet" href="/finalProjectTemple/css-temple/largeTemple.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/finalprojecttemple/csstemple/normalizetemple.css">
+    <link rel="stylesheet" href="/finalprojecttemple/csstemple/smalltemple.css">
+    <link rel="stylesheet" href="/finalprojecttemple/csstemple/mediumtemple.css">
+    <link rel="stylesheet" href="/finalprojecttemple/csstemple/largetemple.css">
     <title>Temple Inn & Suites Home page</title>
 </head>
 
 <body id="wrapper">
     <header id="grid">
-        <div id="innHeading">
+        <div id="innheading">
 
-            <img id="logo" src="templeImages/slcTempleClipArt.jpg" alt="Salt Lake LDS Temple Clip-art">
+            <img id="logo" src="templeimages/slctempleclipart.jpg" alt="Salt Lake LDS Temple Clip-art">
             <h1 class="home">Temple Inn & Suites</h1>
 
-            <button id="hamburgerHome">
-                <span class="bar">nav</span>
-                <span class="bar"></span>
-                <span class="bar">menu</span>
-            </button>
-            <div>
+            
+            <div class="facebooklinkedin">
                 <a href="https://facebook.com">
                     <svg width="35" enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32"
                         width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
@@ -74,43 +72,59 @@
         </div>
         <div class="nav">
             <nav id="menu">
-                <a class="nav-branding" href="#"></a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="indexTemple.html" class="nav-link"><strong>Home</strong></a>
+                <button id="hamburgerhome">
+                    <span class="bar">&#9776;</span>
+                    <span class="bar">X</span>
+                </button>
+                <!-- <nav>
+                    <button id="hamburgerBtn">
+                        <span>&#9776;</span>
+                        <span>X</span>
+                    </button>
+                    <ul id="primaryNav">
+                        <li><a href="#">Home</a></li>
+                        <li class="active"><a href="#">Products</a></li>
+                        <li class=""><a href="#">Location</a></li>
+                        <li class=""><a href="#">Contact</a></li>     
+                    </ul>
+                </nav> -->
+                <ul id="primarynav" class="navmenu">
+                    <li class="active">
+                        <a href="indextemple.html" class=""><strong>Home</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="Temples.html" class="nav-link"><strong>Temples</strong></a>
+                    <li class="">
+                        <a href="temples.html" class="navlink"><strong>Temples</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="Reservations.html" class="nav-link"><strong>Reservations</strong></a>
+                    <li class="">
+                        <a href="reservations.html" class="navlink"><strong>Reservations</strong></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="Receptions.html" class="nav-link"><strong>Receptions<div class="nav2">
+                    <li class="">
+                        <a href="receptions.html" class="navlink"><strong>Receptions</strong></a>
+                    </li>
                 </ul>
-                </a>
             </nav>
-        </div>
-        <aside id="aside"><span>date:</span></aside>
+        
+        <aside id="aside"><strong>Date:<span id="date"></span></strong>
+        </aside>
     </header>
     <main id="gallery">
-        <div id="grid-container" class="row2">
-            <section id="grid-item1" class="column2-4a">
-                <h2 class="weddingHeader">
+        <div id="gridcontainer" class="row2">
+            <section id="griditem1" class="column2-4a">
+                <h2 class="weddingheader">
                     Making days that need to be PERFECT...<br>Stress FREE!
                 </h2>
 
                 <br>
-                <button class="callToAction">
+                <button class="calltoaction">
                     <img id="panoTemple">
-                    <a href="Reservations.html" class="nav-link">Make A Reservation</a>
+                    <a href="reservations.html" class="navlink">Make A Reservation</a>
                 </button>
             </section>
         <!-- </div> -->
         <!-- <div id="row3"> -->
-            <section id="grid-item2" class="column2-4b">
-                <img id="youthTreck">
-                <h2 class="youthFun">
+            <section id="griditem2" class="column2-4b">
+                <img id="youthtreck">
+                <h2 class="youthfun">
                     SAFE & FUN Youth camps!
                 </h2>
             </section>
@@ -118,13 +132,13 @@
 
         <section class="column2c-row4">
             <p>Wether it is college retreats, seniors or single-adult groups we are here to make sure we meet the needs
-                of everyone who wants to visit these heavenly buildings. We can provide the ease of making the temple a
+                of everyone who wants to visit any one of these heavenly buildings. We can provide the ease of making the temple a
                 relaxed vacation... Ask about our suites?</p>
         </section>
-        <div id="flex-wrap">
+        <div id="flexwrap">
             <!-- <div class="column2-3f"> -->
                 <section class="weather">
-                    <button id="collapseWeather">NO THANKS</button>
+                    <button id="collapseweather">NO THANKS</button>
 
                     
                     <h3>
@@ -132,42 +146,45 @@
                     </h3>
                     <label id="city">
                         <p> What is your City<br> (ie:Ancorage) </p>
-                        <input type="text" id="cityStateCountry"><br>
-                        <button id="moveCurrentDateAndDay">GENERATE</button></label> 
+                        <input type="text" id="citystatecountry"><br>
+                        <button id="generate">GENERATE</button></label> 
                 </section>
             <!-- </div> -->
             <!-- <div class="column3-4f"> -->
-                <section class="weatherDetails1">
-                    <img id="weatherIcon1">
-                    <strong><span id="iconDesc"></span></strong>
+                <section class="weatherdetails1">
+                    <img id="weathericon1">
+                    <strong><span>Today:</span></strong>
+                    <strong><span id="icondesc1"></span></strong>
 
                     <p>
-                        Temp:<span id="temperature"></span>&#176;F |<br>
-                        Wind:<span id="windSpeed"></span>mph |<br>
-                        Humidity:
+                        Temp:<span id="temperature1"></span>&#176;F |<br>
+                        Wind:<span id="windspeed1"></span>mph |<br>
+                        Humidity:<span id="humidity1"></span>
                         <!-- Wind Chill:<span id="windChill"></span> &#176;F -->
                     </p>
                 </section>
-                <section class="weatherDetails2">
-                    <img id="weatherIcon2">
-                    <strong><span id="iconDesc"></span></strong>
+                <section class="weatherdetails2">
+                    <img id="weathericon2">
+                    <strong><span>Tomorrow:</span></strong>
+                    <strong><span id="icondesc2"></span></strong>
                     <p>
-                        Temp:<span id="temperature"></span>&#176;F |<br>
-                        Wind:<span id="windSpeed"></span>mph |<br>
-                        Humidity:
+                        Temp:<span id="temperature2"></span>&#176;F |<br>
+                        Wind:<span id="windspeed2"></span>mph |<br>
+                        Humidity:<span id="humidity2"></span>
                         <!-- Wind Chill:<span id="windChill"></span> &#176;F -->
                     </p>
                 </section>
             <!-- </div> -->
             
             <!-- <div> -->
-                <section class="weatherDetails3">
-                    <img id="weatherIcon3">
-                    <strong><span id="iconDesc"></span></strong>
+                <section class="weatherdetails3">
+                    <img id="weathericon3">
+                    <strong><span>Two days hence:</span></strong>
+                    <strong><span id="icondesc3"></span></strong>
                     <p>
-                        Temp:<span id="temperature"></span>&#176;F |<br>
-                        Wind:<span id="windSpeed"></span>mph |<br>
-                        Humidity:
+                        Temp:<span id="temperature3"></span>&#176;F |<br>
+                        Wind:<span id="windspeed3"></span>mph |<br>
+                        Humidity:<span id="humidity3"></span>
                         <!-- Wind Chill:<span id="windChill"></span> &#176;F -->
                     </p>
                 </section>
@@ -175,13 +192,13 @@
         <!-- <div class="row5"> -->
             <section class="column2-4d">
                 <h2>Single Adults to Seniors Stay-cation?</h2>
-                <img id="singles-seniors">
+                <img id="singlesseniors">
             </section>
         <!-- </div> -->
         <!-- <div class="row6"> -->
             <section class="column2-4e">
                 <h3>Families with Children... need child care?</h3>
-                <img id="familySilohette">
+                <img id="familysilohette">
             </section>
         </div>
        
@@ -191,7 +208,10 @@
         <h4 id="baseline"><span>&copy; Laycie Bowers | WDD230 | BYUI-Final Project</span></h4>
         <h6>Weather data provided by<a href="https://api.openweathermap.org">https://api.openweathermap.org</a>
         </h6>
+        <h6>Temple Inn & Suites: 4800 Montgomery Ln #300, Bethesda, MD 20814<a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">   &#128205;Map </a>
+        </h6>
     </footer>
 </body>
-
+<script type="module" src="jstemplesite/indextemple.js"></script>
+<script src="jstemplesite/3dayweather.js"></script>
 </html>

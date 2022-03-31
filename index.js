@@ -20,7 +20,8 @@ let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"],
 ["Lesson 09B:", "chamber/directory.html"],
 ["Lesson 10A:","lesson10/weather-api.html"],
 ["Lesson 10B:","chamber/index.html"], 
-["Lesson 11:","lesson11/templeSitePlan.html"]];
+["Lesson 11A:","lesson11/templeSitePlan.html"],
+];
 
 document.getElementById("year");
 document.getElementById("myImage").setAttribute("src", myImage);

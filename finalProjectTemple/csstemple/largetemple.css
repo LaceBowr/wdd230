@@ -1,16 +1,18 @@
-/* On screens that are 993px or more, set the background color to pink */
-@media (min-width: 993px){
+/* On screens that are 992px or more, set the background color to pink */
+/* fonts for this site:
+Headings:  font-family: 'Oswald', sans-serif;
+Paragraphs:  font-family: 'Roboto', sans-serif; */
+@media (min-width: 992px){
     body{
-        background-color:pink;
+        background-color:white;
         display: grid;
         margin: 5px;
         
     }
     *{  justify-content: center;
         text-align: center;
-        padding: 0;
         box-sizing: border-box;
-        margin: auto; 
+        /* margin: auto;  */
     }
     header#grid{
         background-color: #546089;
@@ -18,15 +20,16 @@
         max-width: 100%;
         grid-column: 1/6;
         grid-row: 1/2;
-        margin:  -5px;
+        margin:  0 -5px;
     }
-    aside {
+    
+    aside#aside {
         color: #283959;
         grid-column: 1/5;
         grid-row:2/3;
         max-width: 100%;
         margin: auto;
-        border: 1px solid #818783;
+        border: 1px solid #283959;
         background-color: #ffffe3;
         text-align: center;
         padding: 1px;
@@ -35,7 +38,7 @@
         grid-row: 1/2;
         grid-column: 2/3;  
     }
-    div#innHeading{
+    div#innheading{
         display: flex;
         margin-top: 30px;
     }
@@ -43,9 +46,13 @@
         grid-column: 2/3;
         grid-row: 1/2;
         width: auto;
+        border-radius: 15px;
+        box-shadow: gray;
         padding: 0 10px;
-        height: 80px;
-        margin-top: -15px;
+        max-height: 130px;
+        margin-top: -30px;
+        border: none;
+        
     }
     h1.home{
         justify-content: center;
@@ -67,20 +74,22 @@
         width: 30px;
         height: 30px;
     }
-    section.facebookLinkedIn{    
+    div.facebooklinkedin{    
         grid-column: 4/5;
         grid-row: 1/2;
         position: relative;
-        width: 44px;
-        margin-left: 15px;
+        min-width: 44px;
+        margin-left: 3%;
     }
-    button#buttonHome{
+    a#background, a#layer1{ 
+        width: 44px;
+    }
+    button#buttonhome{
         margin: 0;
         width: 44px;
         height: 44px; 
     }
-    button#hamburgerHome{
-        justify-content: end;
+    button#hamburgerhome{
         display: none;
         grid-row: 1/2;
         border: solid #818783;
@@ -92,18 +101,64 @@
         width: 35px;
         max-height: 35px;
     }
-    nav#menu{
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a{
+        display: block;
+        padding: .8rem 2vw;
+        text-decoration: none;
+        color: #283959; 
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Oswald', sans-serif;
+    }
+    p{
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+    }
+    li a{
         font-size: 30px;
+    }
+    nav ul li.active a{
+        background-color: rgba(255, 255, 227, 0.5);
+        color: #546089;
+    }
+    nav ul li a:hover{
+        background-color: #283959;
+        color: #ffffe3;
+    }
+    nav ul {display: inline-flex;}
+    nav ul.open {display: inline-flex;}
+    #hamburgerhome span:nth-child(1){display: inline-flex;}
+    #hamburgerhome span:nth-child(2){display: inline-flex;}
+    
+    #hamburgerhome.open span:nth-child(1){display:inline-flex;}
+    #hamburgerhome.open span:nth-child(2){display:inline-flex;}
+
+    nav#menu{
+        font-family: 'Oswald', sans-serif;
         background-color: #bfa68f;
     }
-    nav#nav-menu{
+    nav#navmenu{
         grid-column: 1/4;
         grid-row: 2/3;
         background-color: #bfa68f;
     }
-    li.nav-item{
+    ul#primarynav.navmenu{
+        display: inline-flex;
+        padding: 0;
+    }
+    nav li{
         
-        padding: 10px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    ul li.navitem{
+        padding: 5px;
         justify-content: center;
         text-align: center;
         display: inline-flex;
@@ -117,7 +172,7 @@
         background-color: white;
     }
 
-    h2.weddingHeader{
+    h2.weddingheader{
         grid-column: 1/5;
         grid-row: 2/3;
         font-size: 28px;
@@ -129,18 +184,18 @@
         grid-row: auto;
         border-radius: 20px 20px 20px 20px;
     }
-    button.callToAction{
+    button.calltoaction{
         background-color: #bfa68f;
         border-radius: 8px;
         border: gray;
         padding: 8px;
+        max-height: 30px;
         position: relative;
     }
     section.column2-4a{
-        
         justify-content: center;
         text-align: center;
-        padding: 0 100px 200px;
+        padding: 0 200px 100px;
         grid-column: 2/6;
         grid-row: 1/2;
         min-width: 90%;
@@ -152,11 +207,12 @@
     section.column2-4b{
         color: #283959;
         padding: 0 60px 120px 0;
+        margin-top: 60px;
         max-width: 100%;
-        min-height: 80%;
+        max-height: 68%;
         grid-column: 2/4;
         grid-row: 2/4;
-        background-image: url(../templeImages/templeYouth.jpg) /*alt="yw & ym on LDS treck with hand carts"*/;
+        background-image: url(../templeImages/templeyouth.jpg) /*alt="yw & ym on LDS treck with hand carts"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
@@ -168,7 +224,7 @@
         grid-row: 4/5;    
         padding: 8px;
         max-width: 90%;
-        min-height: 15%;
+        min-height: 10%;
         color:#283959;
         background-color: #ffffe3;
         border: solid 1px #818783;
@@ -181,10 +237,10 @@
         padding: 0 80px 100px ;
         grid-column: 4/6;
         grid-row: 2/3;
-        margin: 15px;
+        margin: 5px;
         min-width: 90%;
-        max-height: 100%;
-        background-image: url(../templeImages/single-seniors-Recovered400x239.jpg) /*alt="Single Woman speaking with a Senior Woman"*/;
+        max-height: 75%;
+        background-image: url(../templeimages/singleseniors400x239.jpg) /*alt="Single Woman speaking with a Senior Woman"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
@@ -193,16 +249,16 @@
         justify-content: center;
         text-align: center;
         padding: 0 70px 100px 0;
-        margin: 5px;
         grid-column: 4/6;
         grid-row: 3/4;
-        min-height: 100%;
+        max-height: 95%;
         width: 95%;
-        background-image: url(../templeImages/familySilhouette400x200.jpg) /*alt="couple with 3 children silhouette"*/;
+        margin: 5px;
+        background-image: url(../templeimages/familysilhouette400x200.jpg) /*alt="couple with 3 children silhouette"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
-    div#flex-wrap{
+    div#flexwrap{
         display:grid;
         grid-column: 2/6;
         grid-row: 5/6;
@@ -220,7 +276,7 @@
         background-color: #546089;
         color:#bfa68f;
     }
-    section.weatherDetails1{
+    section.weatherdetails1{
         grid-column: 3/4;
         grid-row: 5/6;
         border: solid 3px #283959;
@@ -231,7 +287,7 @@
         background-color: #546089;
         color:#bfa68f;
     }
-    section.weatherDetails2{
+    section.weatherdetails2{
         border: solid 3px #283959;
         border-radius: 20px;
         margin-top: 15px;
@@ -242,7 +298,7 @@
         background-color: #546089;
         color:#bfa68f;
     }
-    section.weatherDetails3{
+    section.weatherdetails3{
         justify-content: center;
         text-align: center;
         grid-column: 5/6;
@@ -255,13 +311,13 @@
         background-color: #546089;
         color:#bfa68f;
     }
-    button#moveCurrentDateAndDay{
+    button#movecurrentdateandday{
         background-color: #bfa68f;
         color: #283959;
         border-radius: 3px;
         padding: 1px;
     }
-    button#collapseWeather{
+    button#collapseweather{
         background-color: #bfa68f;
         color: #283959;
         border-radius: 3px;
@@ -275,5 +331,12 @@
         padding: 20px;
         margin: 0 0 0 0;
     }  
+    /* TEMPLES PAGE CSS */
+    /* large view */
+
+  
+  
+
+
 }
 
