@@ -271,6 +271,13 @@ form label.top input:required:valid{
         width: 100%;
         max-width: 20rem;
     }
+    label#submitButton input{
+        background-color: #283959;
+        border:rgb(84, 96, 137);
+        color: #ffffe3;
+        padding: 20px;
+        border-radius: 20px;
+    }
 }
 @media (min-width: 601px) and (max-width: 992){
     body#wrapper3{
@@ -302,7 +309,7 @@ form label.top input:required:valid{
     aside#aside {
         color: #283959;
         grid-column: 1/5;
-        grid-row:2/3;
+        grid-row: auto;
         max-width: 100%;
         margin: auto;
         border: 1px solid #283959;
@@ -358,6 +365,7 @@ form label.top input:required:valid{
         width: 44px;
         height: 44px; 
     }
+    
     /* button#hamburgerhome{
         justify-content: end;
         display: block;
@@ -437,6 +445,8 @@ form label.top input:required:valid{
     }
     
     form fieldset {
+        width: 70%;
+        grid-column: 2/3;
         font-family: 'Oswald', sans-serif;
         margin: 2rem 0;
         border: 3px solid #818783;
@@ -478,7 +488,14 @@ form label.top input:required:valid{
     
 }
 /* -----------------form---------- */
-
+label#submitButton input{
+    background-color: #283959;
+    border:rgb(84, 96, 137);
+    color: #ffffe3;
+    font-family: 'Oswald', sans-serif;;
+    padding: 20px;
+    border-radius: 20px;
+}
 
 @media (max-width: 600px) {
     body#wrapper3{

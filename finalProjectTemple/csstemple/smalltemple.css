@@ -200,9 +200,8 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
         position: relative;
     }
     section.column2-4a{
-        margin: 0 5%;
         padding: 0 150px 100px;
-        max-width: 400px;
+        max-width: 375px;
         grid-column: 1/5;
         background-image: url(../templeimages/panotemple.jpg) /*alt="wedding couple in front of LDS temple"*/;
         border: solid 3px #818783;
