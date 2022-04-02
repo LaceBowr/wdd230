@@ -17,7 +17,6 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
       background-color: white;
     }
     img#logo{
-        border-radius: none;
         box-shadow: none;
     }
     .row::after {
@@ -99,7 +98,7 @@ section {
     font-family: 'Roboto', sans-serif;
     border: solid 3px #818783;
     border-radius: 20px;
-    grid-row: 1fr;
+    grid-row: auto;
     height: auto;
     background-color: rgba(84, 96, 137, .5);
     color: #283959;
@@ -172,7 +171,6 @@ section {
         grid-row: 1/2;
         width: auto;
         border-radius: 15px;
-        box-shadow: gray;
         padding: 0 10px;
         max-height: 130px;
         margin-top: -30px;

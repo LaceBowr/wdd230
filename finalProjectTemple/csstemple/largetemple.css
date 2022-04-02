@@ -47,7 +47,6 @@ Paragraphs:  font-family: 'Roboto', sans-serif; */
         grid-row: 1/2;
         width: auto;
         border-radius: 15px;
-        box-shadow: gray;
         padding: 0 10px;
         max-height: 130px;
         margin-top: -30px;

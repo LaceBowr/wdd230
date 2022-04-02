@@ -201,7 +201,7 @@ section.services3{
     grid-row: 2/3;
 }
 
-@media (min-width: 601) and (max-width: 900px){
+@media (min-width: 601px) and (max-width: 900px){
     
     div.facebooklinkedin {
         grid-column: 4/5;
@@ -300,7 +300,7 @@ section.services3{
     
     img{
         border-radius: 20px;
-        border: solid 3px #818783;
+        
     }
     image#logo{
         border: none;

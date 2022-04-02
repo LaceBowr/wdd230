@@ -175,13 +175,6 @@ if( document.querySelector("#cardsection") )
     //store the new number of visits value
     localStorage.setItem("visits-ls", numVisits);
   }
-
-  // show todays date.
-  let todayDisplay = document.getElementById("currentdate2");
-  if(todayDisplay)
-  {
-    todayDisplay.textContent = Date.now();
-  }
   
   let dayNames = [
     "Sunday",
@@ -213,8 +206,11 @@ let monthName = monthNames[date.getMonth()];
 let year = date.getFullYear();
 let currentdate = dayName + "," + monthName + "," + date.getDate() + "," + year;
 
-document.getElementById("currentdate2").textContent = fulldate;
-
+let todayDisplay = document.getElementById("currentdate2");
+if(todayDisplay)
+{
+  todayDisplay.textContent = currentdate;
+}
 try{
   let options = {
     weekday: ("long"),
