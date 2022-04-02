@@ -2,7 +2,9 @@
 /* fonts for this site:
 Headings:  font-family: 'Oswald', sans-serif;
 Paragraphs:  font-family: 'Roboto', sans-serif; */
-
+*{
+    margin: auto;
+}
 
 form fieldset {
     font-family: 'Oswald', sans-serif;
@@ -10,7 +12,7 @@ form fieldset {
     border: 3px solid #818783;
     border-radius: 20px;
     padding: .5rem 2%;
-    box-shadow: 0 0 30px #bfa68f;
+    box-shadow: 0 0 30px #546085;
 }
 
 form legend {
@@ -32,6 +34,7 @@ form div {
 
 form label.top input,
 form label.top select {
+
     display: block;
     font-size: 1rem;
     border: solid 2px #546085;
@@ -51,19 +54,20 @@ form input.sumitBtn{
     background-color: #546089;
     color: #ffffe3;
     border-radius: 1rem;
-    padding:.75rem, .75rem;
+    padding:.75rem, 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
-
-    
+    max-width: 20rem;    
     }
-/* form label.top input:required{
-        border-left: ;
-} */
+form label.top input:required{
+        border-left: red solid 6px;
+}
+form label.top input:required:valid{
+    border-left: green solid 6px;
+}
 @media (min-width: 993px) {
     body#wrapper3 {
-        margin-left: 70px;
+        
         display: grid;
         grid-template-columns: 20% 60% 20%;
         font-family: 'Oswald', sans-serif;
@@ -194,29 +198,7 @@ form input.sumitBtn{
         color: #ffffe3;
     }
 
-    nav ul {
-        display: none;
-    }
-
-    nav ul.open {
-        display: block;
-    }
-
-    #hamburgerhome span:nth-child(1) {
-        display: block;
-    }
-
-    #hamburgerhome span:nth-child(2) {
-        display: none;
-    }
-
-    #hamburgerhome.open span:nth-child(1) {
-        display: none;
-    }
-
-    #hamburgerhome.open span:nth-child(2) {
-        display: block;
-    }
+    
 
     nav#menu {
         background-color: #bfa68f;
@@ -261,7 +243,7 @@ form input.sumitBtn{
         border: 3px solid #818783;
         border-radius: 20px;
         padding: .5rem 2%;
-        box-shadow: 0 0 30px #bfa68f;
+        box-shadow: 0 0 30px #546089;
     }
     form legend {
         color: #bfa68f;
@@ -460,7 +442,7 @@ form input.sumitBtn{
         border: 3px solid #818783;
         border-radius: 20px;
         padding: .5rem 2%;
-        box-shadow: 0 0 30px #bfa68f;
+        box-shadow: 0 0 30px #546089;
     
     }
     
@@ -513,7 +495,7 @@ form input.sumitBtn{
     form fieldset {
         font-family: 'Oswald', sans-serif;
         margin: 2rem 0;
-        border: 3px solid #818783;
+        border: 3px solid #546089;
         border-radius: 20px;
         padding: .5rem 2%;
         box-shadow: 0 0 30px #bfa68f;
@@ -542,7 +524,7 @@ form input.sumitBtn{
     form label.top select {
         display: block;
         font-size: 1rem;
-        border: solid 2px #546085;
+        border: solid 2px #546089;
         border-radius: 4px;
         padding: .75rem;
         width: 100%;

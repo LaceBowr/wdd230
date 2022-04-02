@@ -99,7 +99,7 @@
                         <a href="reservations.html" class="navlink"><strong>Reservations</strong></a>
                     </li>
                     <li class="">
-                        <a href="receptions.html" class="navlink"><strong>Receptions</strong></a>
+                        <a href="services.html" class="navlink"><strong>Services</strong></a>
                     </li>
                 </ul>
             </nav>
@@ -139,23 +139,22 @@
             <!-- <div class="column2-3f"> -->
                 <section class="weather">
                     <button id="collapseweather">NO THANKS</button>
-
-                    
                     <h3>
-                        <center>3-day <br>Weather forcast</center>
+                        <center>3-day <br>Weather forcast:</center>
                     </h3>
-                    <label id="city">
-                        <p> What is your City<br> (ie:Ancorage) </p>
+                    <h5 class="enterlocation">What is your City<br> (ie:Ancorage)</h5>
+                    
+                        <label id="city">
                         <input type="text" id="citystatecountry"><br>
                         <button id="generate">GENERATE</button></label> 
                 </section>
             <!-- </div> -->
             <!-- <div class="column3-4f"> -->
+                
                 <section class="weatherdetails1">
-                    <img id="weathericon1">
                     <strong><span>Today:</span></strong>
+                    <img id="weathericon1">
                     <strong><span id="icondesc1"></span></strong>
-
                     <p>
                         Temp:<span id="temperature1"></span>&#176;F |<br>
                         Wind:<span id="windspeed1"></span>mph |<br>
@@ -164,8 +163,8 @@
                     </p>
                 </section>
                 <section class="weatherdetails2">
-                    <img id="weathericon2">
                     <strong><span>Tomorrow:</span></strong>
+                    <img id="weathericon2">
                     <strong><span id="icondesc2"></span></strong>
                     <p>
                         Temp:<span id="temperature2"></span>&#176;F |<br>
@@ -178,8 +177,8 @@
             
             <!-- <div> -->
                 <section class="weatherdetails3">
+                <strong><span>In 2 days:</span></strong>
                     <img id="weathericon3">
-                    <strong><span>Two days hence:</span></strong>
                     <strong><span id="icondesc3"></span></strong>
                     <p>
                         Temp:<span id="temperature3"></span>&#176;F |<br>
@@ -207,7 +206,7 @@
     <footer>
         <h4 id="baseline"><span>&copy; Laycie Bowers | WDD230 | BYUI-Final Project</span></h4>
         <h6>Weather data provided by<a href="https://api.openweathermap.org">https://api.openweathermap.org</a>
-        </h6>
+            <br><span class="label">Number of Visits:<span class="visits" id="visits"></span></span></h6>
         <h6>Temple Inn & Suites: 4800 Montgomery Ln #300, Bethesda, MD 20814<a href="https://www.google.com/maps/place/4800+Montgomery+Ln+%23300,+Bethesda,+MD+20814/@38.9832518,-77.0977258,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c97b6b8f21f1:0x9a0b3cde14da0a60!8m2!3d38.9832518!4d-77.0955318">   &#128205;Map </a>
         </h6>
     </footer>

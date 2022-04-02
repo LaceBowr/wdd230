@@ -13,6 +13,8 @@ function toggleMenu(){
       hamhome.setAttribute("class", "");
     }
 }
+document.getElementById("primarynav").setAttribute("class", "");
+document.getElementById("hamburgerhome").setAttribute("class", "");
 
 const x = document.getElementById('hamburgerhome');
 
@@ -28,6 +30,41 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 
 datefield.innerHTML = `<em>${fulldate}<em>`;
+const local_storage_key = 'favlist';
+function favclicked()
+{
+  let favlist = localStorage.getItem(local_storage_key);
+  if(favlist)
+  {
+    favlist = JSON.parse(favlist);
+  }
+  let id = this.id
+  if (favlist && favlist.includes(id))
+  // Un favoriting
+  {
+    let index = favlist.indexOf(id)
+    if (index > -1) 
+    {
+      favlist.splice(index, 1);
+    }
+    localStorage.setItem(local_storage_key, JSON.stringify(favlist));
+    document.getElementById(id).innerHTML = "Favorite: <span>&#9744</span>";
+  }
+  else
+  // Favoriting
+  {
+    if(favlist)
+    {
+      favlist.push(id);
+    }
+    else
+    {
+      favlist = [id];
+    }
+    localStorage.setItem(local_storage_key, JSON.stringify(favlist));
+    document.getElementById(id).innerHTML = "Favorite: <span>&#9745</span>";
+  }
+}
 
 /*json information for temples page*/ 
 if( document.querySelector("#cardsection") )
@@ -86,7 +123,30 @@ if( document.querySelector("#cardsection") )
           // order = `${temple.order}th`;
         // }
         // Add/append the section(card) with the h2 element
+        
+        let favid = `${temple.location}favorite`; 
+        let fav = document.createElement('h5');
+        fav.setAttribute("id", favid);
+        fav.addEventListener("click", favclicked);
+        let isfav = false;
+        let favlist = localStorage.getItem(local_storage_key);
+        if(favlist)
+        {
+          favlist = JSON.parse(favlist);
+        }
+        if(favlist && favlist.includes(favid))
+        {
+          isfav = true;
+        }
+        let icontext = "<span>&#9744</span>"; // Empty checkbox
+        if (isfav)
+        {
+          icontext = "<span>&#9745</span>"; // checked box
+        }
+        fav.innerHTML = `Favorite: ${icontext}`;
+
         card.appendChild(h2);
+        card.appendChild(fav);
         card.appendChild(img);
         card.appendChild(h3, h3, h3)
         card.appendChild(address, telephone, email);

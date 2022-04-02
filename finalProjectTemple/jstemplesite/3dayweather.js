@@ -25,6 +25,8 @@ function processday(forcast, daynum){
     let tempDay = forcast.temp.day;
     let windspeed = forcast.wind_speed;
     let desc = forcast.weather[0].description;
+    let iconnum = forcast.weather[0].icon;
+    let iconurl = getIconURL(iconnum);
     let humidityid = "#humidity" + parseInt(daynum);
     let tempid = "#temperature" + parseInt(daynum);
     let windspeedid = "#windspeed" + parseInt(daynum);
@@ -34,6 +36,7 @@ function processday(forcast, daynum){
     document.querySelector(tempid).textContent = tempDay;
     document.querySelector(windspeedid).textContent = windspeed;
     document.querySelector(weatherdescid).textContent = desc;
+    document.querySelector(iconid).src = iconurl;
 }
 function fillData(data){
     today = data[0];
@@ -43,11 +46,6 @@ function fillData(data){
     processday(tomorrow,2);
     processday(dayafter,3);
 }
-function getIconInfo(){
-    let icon = data["weather"][0]["icon"];
-    let desc = data["weather"][0]["description"];
-    document.querySelector("#weatherIcon");
-    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-    weatherIcon.alt = `open weather map API icon: ${desc}`;
-    document.querySelector("#iconDesc").innerHTML = desc;
+function getIconURL(iconid){
+    return `https://openweathermap.org/img/wn/${iconid}@2x.png`;
 }

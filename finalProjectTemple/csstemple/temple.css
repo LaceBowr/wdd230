@@ -7,9 +7,8 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
     h2#headingtemples{
         font-family: 'Roboto', sans-serif;
         font-style: italic;
-        background-color: #bfa68f;
+        background-color: #ffffe3;
         margin: 10px 15px 5px 5px;
-       
         font-size: 15px;
         color: #546089;
         border: solid #818783 3px;
@@ -74,7 +73,7 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
     h2#headingtemples{
         font-family: 'Roboto', sans-serif;
         font-style: italic;
-        background-color: #bfa68f;
+        background-color: #ffffe3;
         margin: 10px 15px 5px 5px;
         
         font-size: 20px;
@@ -250,13 +249,6 @@ section {
         background-color: #283959;
         color: #ffffe3;
     }
-    nav ul {display: none;}
-    nav ul.open {display: block;}
-    #hamburgerhome span:nth-child(1){display: block;}
-    #hamburgerhome span:nth-child(2){display: none;}
-    
-    #hamburgerhome.open span:nth-child(1){display:none;}
-    #hamburgerhome.open span:nth-child(2){display:block;}
 
     nav#menu{
         background-color: #bfa68f;
@@ -272,9 +264,9 @@ section {
     }  
     h2#headingtemples{
         font-family: 'Roboto', sans-serif;
-        background-color: #bfa68f;
+        background-color: #ffffe3;
         margin: 10px 35px 5px 35px;
-       
+        font-style: italic;
         font-size: 23px;
         padding: 15px;
         color: #546089;
