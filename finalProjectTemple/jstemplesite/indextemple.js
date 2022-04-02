@@ -83,79 +83,147 @@ if( document.querySelector("#cardsection") )
 //    temples.forEach(displaytemples)
 //  });
 
-  function displaytemplesinfo(temple){
+  function displaytemplesinfo(temple)
+  {
+    // Create elements to add to the document
+    let card = document.createElement('section');
+    card.setAttribute('class','grid');
+    let h2 = document.createElement('h2');
+    let img = document.createElement('img');
+    let address = document.createElement('h3');
+    let telephone = document.createElement('h3');
+    let email = document.createElement('h3');
+    let h3 = document.createElement('h3');
+    let h4 = document.createElement('h4');
+    let h5 = document.createElement('h5');
+    let h6 = document.createElement('h6');
+    let schedule = document.createElement('h6');
+    let closed = document.createElement('h6')
+    let order = '';
+    
+  
+    // Change the textContent property of the h2 element to contain the prophet's full name
+    h2.textContent = `${temple.location} `;
+    h3.innerHTML = `Information: <Strong><br>${temple.Address},<br> Phone: ${temple.Telephone},<br> Email:<br> <a href="${temple.Email}"> ${temple.Email}</a><Strong>`;
+    h4.innerHTML = `<Strong>Services:<Strong><br> ${temple.Services}`;
+    h5.innerHTML = `History:<br> ${temple.History}`;
+    h6.innerHTML = `Schedule: ${temple.Schedule},<br> Closed: ${temple.Closed}`
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    img.setAttribute('src', temple.image);
+    img.setAttribute('alt', `Image of LDS Temple #${temple.image}`);
+    img.setAttribute('loading', 'lazy');
+
+    // if (temple.order === 1){
+      // order = `${temple.order}st`;
+    // } else if (temple.order === 2){
+      // order = `${temple.order}nd`;
+    // } else if (temple.order === 3){
+      // order = `${temple.order}rd`;
+    // } else {
+      // order = `${temple.order}th`;
+    // }
+    // Add/append the section(card) with the h2 element
+    
+    let favid = `${temple.location}favorite`; 
+    let fav = document.createElement('h5');
+    fav.setAttribute("id", favid);
+    fav.addEventListener("click", favclicked);
+    let isfav = false;
+    let favlist = localStorage.getItem(local_storage_key);
+    if(favlist)
     {
-        // Create elements to add to the document
-        let card = document.createElement('section');
-        card.setAttribute('class','grid');
-        let h2 = document.createElement('h2');
-        let img = document.createElement('img');
-        let address = document.createElement('h3');
-        let telephone = document.createElement('h3');
-        let email = document.createElement('h3');
-        let h3 = document.createElement('h3');
-        let h4 = document.createElement('h4');
-        let h5 = document.createElement('h5');
-        let h6 = document.createElement('h6');
-        let schedule = document.createElement('h6');
-        let closed = document.createElement('h6')
-        let order = '';
-        
-      
-        // Change the textContent property of the h2 element to contain the prophet's full name
-        h2.textContent = `${temple.location} `;
-        h3.innerHTML = `Information: <Strong><br>${temple.Address},<br> Phone: ${temple.Telephone},<br> Email:<br> <a href="${temple.Email}"> ${temple.Email}</a><Strong>`;
-        h4.innerHTML = `<Strong>Services:<Strong><br> ${temple.Services}`;
-        h5.innerHTML = `History:<br> ${temple.History}`;
-        h6.innerHTML = `Schedule: ${temple.Schedule},<br> Closed: ${temple.Closed}`
-        // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-        img.setAttribute('src', temple.image);
-        img.setAttribute('alt', `Image of LDS Temple #${temple.image}`);
-        img.setAttribute('loading', 'lazy');
+      favlist = JSON.parse(favlist);
+    }
+    if(favlist && favlist.includes(favid))
+    {
+      isfav = true;
+    }
+    let icontext = "<span>&#9744</span>"; // Empty checkbox
+    if (isfav)
+    {
+      icontext = "<span>&#9745</span>"; // checked box
+    }
+    fav.innerHTML = `Favorite: ${icontext}`;
 
-        // if (temple.order === 1){
-          // order = `${temple.order}st`;
-        // } else if (temple.order === 2){
-          // order = `${temple.order}nd`;
-        // } else if (temple.order === 3){
-          // order = `${temple.order}rd`;
-        // } else {
-          // order = `${temple.order}th`;
-        // }
-        // Add/append the section(card) with the h2 element
-        
-        let favid = `${temple.location}favorite`; 
-        let fav = document.createElement('h5');
-        fav.setAttribute("id", favid);
-        fav.addEventListener("click", favclicked);
-        let isfav = false;
-        let favlist = localStorage.getItem(local_storage_key);
-        if(favlist)
-        {
-          favlist = JSON.parse(favlist);
-        }
-        if(favlist && favlist.includes(favid))
-        {
-          isfav = true;
-        }
-        let icontext = "<span>&#9744</span>"; // Empty checkbox
-        if (isfav)
-        {
-          icontext = "<span>&#9745</span>"; // checked box
-        }
-        fav.innerHTML = `Favorite: ${icontext}`;
-
-        card.appendChild(h2);
-        card.appendChild(fav);
-        card.appendChild(img);
-        card.appendChild(h3, h3, h3)
-        card.appendChild(address, telephone, email);
-        card.appendChild(h4);
-        card.appendChild(h5);
-        card.appendChild(schedule, closed);
-        let cards = document.querySelector("#cardsection");
-        // Add/append the existing HTML div with the cards class with the section(card)
-        cards.appendChild(card);
-      }
+    card.appendChild(h2);
+    card.appendChild(fav);
+    card.appendChild(img);
+    card.appendChild(h3, h3, h3)
+    card.appendChild(address, telephone, email);
+    card.appendChild(h4);
+    card.appendChild(h5);
+    card.appendChild(schedule, closed);
+    let cards = document.querySelector("#cardsection");
+    // Add/append the existing HTML div with the cards class with the section(card)
+    cards.appendChild(card);
   }
+  
+  // Number of VISITS, and Last-MODIFIED this site JS code//  
+  const visitsDisplay = document.querySelector("#visits");
+  if(visitsDisplay)
+  {
+    //get the stored value in localStorage
+    let numVisits = Number(window.localStorage.getItem("visits-ls"));
+    //determine if this is the first visit or display the number of visits.
+    if(numVisits !== 0) {
+        visitsDisplay.textContent = numVisits;
+    }else{
+        visitsDisplay.textContent = `This is your first visit!`;
+    }
+    //increment the number of visits.
+    numVisits++;
+    //store the new number of visits value
+    localStorage.setItem("visits-ls", numVisits);
+  }
+
+  // show todays date.
+  let todayDisplay = document.getElementById("currentdate2");
+  if(todayDisplay)
+  {
+    todayDisplay.textContent = Date.now();
+  }
+  
+  let dayNames = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+  let monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+
+let date = new Date();
+let dayName = dayNames[date.getDay()];
+let monthName = monthNames[date.getMonth()];
+let year = date.getFullYear();
+let currentdate = dayName + "," + monthName + "," + date.getDate() + "," + year;
+
+document.getElementById("currentdate2").textContent = fulldate;
+
+try{
+  let options = {
+    weekday: ("long"),
+    day: ("numeric"),
+    month: ("long"),
+    year: ("numeric")
+  };
+  document.getElementById("currentdate2").textContent = new Date().toLocaleDateString("en-US", options);
+} catch (e) {
+  alert("Error with code or your browser does not support Locale");
+}
   

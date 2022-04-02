@@ -21,7 +21,6 @@ let myLessons = [ ["Lesson 02: ","lesson2/design-principles.html"],
 ["Lesson 10A:","lesson10/weather-api.html"],
 ["Lesson 10B:","chamber/index.html"], 
 ["Lesson 11A:","lesson11/templeSitePlan.html"],
-["Final Project:","finalProjectTemple/indexTemple.html"],
 ];
 
 document.getElementById("year");
