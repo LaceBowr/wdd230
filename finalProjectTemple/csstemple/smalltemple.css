@@ -203,7 +203,7 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
         padding: 0 150px 100px;
         max-width: 375px;
         grid-column: 1/5;
-        background-image: url(../templeimages/panotemple.jpg) /*alt="wedding couple in front of LDS temple"*/;
+        background-image: url(../templeImages/panoTemple.jpg) /*alt="wedding couple in front of LDS temple"*/;
         border: solid 3px #818783;
         border-radius: 20px;
         overflow: hidden;
@@ -216,7 +216,7 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
         max-width: 80%;
         min-height: 200px;
         grid-column: 2/5;
-        background-image: url(../templeimages/templeyouth.jpg) /*alt="yw & ym on LDS treck with hand carts"*/;
+        background-image: url(../templeImages/templeYouth.jpg) /*alt="yw & ym on LDS treck with hand carts"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
@@ -238,7 +238,7 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
         grid-column: 1/5;
         max-height: 85%;
         max-width: 60%;
-        background-image: url(../templeimages/singleseniors325x194.jpg) /*alt="Single Woman speaking with a Senior Woman"*/;
+        background-image: url(../templeImages/singleseniors325x194.jpg) /*alt="Single Woman speaking with a Senior Woman"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
@@ -250,7 +250,7 @@ Paragraphs: font-family: 'Roboto', sans-serif; */
         grid-column: 1/5;
         min-height: 100%;
         max-width: 65%;
-        background-image: url(../templeimages/familysilhouette325x163.jpg) /*alt="couple with 3 children silhouette"*/;
+        background-image: url(../templeImages/familySilhouette325x163.jpg) /*alt="couple with 3 children silhouette"*/;
         border: solid 3px #818783;
         border-radius: 20px;
     }
